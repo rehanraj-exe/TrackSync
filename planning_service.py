@@ -60,7 +60,9 @@ class PlanningService:
         tasks = self.score_tasks(data)
         tasks = tasks[tasks["deadline"] <= today + pd.Timedelta(days=horizon_days)].copy()
         blocks = data["blocks"][data["blocks"]["start"] <= today + pd.Timedelta(days=horizon_days)].copy()
-        selected_blocks, solver_status = self.optimizer.select(tasks, blocks, data.get("forecast"), max_blocks)
+        selected_blocks, solver_status = self.optimizer.select(
+            tasks, blocks, data.get("forecast"), max_blocks, data.get("resources")
+        )
         if solver_status == "INFEASIBLE":
             selected_blocks = blocks.iloc[0:0]
         scenario_data = dict(data)
