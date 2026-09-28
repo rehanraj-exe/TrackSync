@@ -17,7 +17,7 @@ except ImportError:
     BaseModel = None
 
 
-service = PlanningService(Path(__file__).parent)
+service = PlanningService((Path(__file__).parent.parent / "data"))
 app = FastAPI(title="Railway AI Block Planning API", version="1.0.0") if FastAPI else None
 
 
@@ -39,12 +39,12 @@ if app:
     @app.get("/predictions")
     def predictions():
         try:
-            model = joblib.load(Path(__file__).parent / "defect_predictor.joblib")
+            model = joblib.load((Path(__file__).parent.parent / "data").parent / "data" / "defect_predictor.joblib")
             import pandas as pd
             import numpy as np
             
             # Load real maintenance data
-            data_dir = Path(__file__).parent
+            data_dir = (Path(__file__).parent.parent / "data")
             tasks = pd.read_csv(data_dir / "maintenance_tasks.csv")
             history = pd.read_csv(data_dir / "maintenance_history.csv")
             corridors = pd.read_csv(data_dir / "corridor_reference.csv")
@@ -152,7 +152,7 @@ if app:
     @app.get("/corridors")
     def get_corridors():
         import pandas as pd
-        data_dir = Path(__file__).parent
+        data_dir = (Path(__file__).parent.parent / "data")
         try:
             df = pd.read_csv(data_dir / "corridor_reference.csv")
             return df.to_dict(orient="records")

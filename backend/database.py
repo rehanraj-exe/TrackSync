@@ -9,7 +9,8 @@ from core_data_models import (
     BlockStatus, BlockPriority
 )
 
-DB_PATH = "railway_planner.db"
+import os
+DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "railway_planner.db")
 
 
 def get_connection():

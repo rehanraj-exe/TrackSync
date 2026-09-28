@@ -6,7 +6,7 @@ from ai_optimization_layer import AIPriorityEngine, RecommendationEngine, Synthe
 from planning_service import PlanningService
 
 
-DATA_DIR = Path(__file__).parent
+DATA_DIR = (Path(__file__).parent.parent / "data")
 
 
 def print_recommendations(title, recommendations):
