@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/health",
+      "destination": "https://tracksync-6l14.onrender.com/health"
+    },
+    {
+      "source": "/tasks",
+      "destination": "https://tracksync-6l14.onrender.com/tasks"
+    },
+    {
+      "source": "/plans/:path*",
+      "destination": "https://tracksync-6l14.onrender.com/plans/:path*"
+    },
+    {
+      "source": "/predictions",
+      "destination": "https://tracksync-6l14.onrender.com/predictions"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
