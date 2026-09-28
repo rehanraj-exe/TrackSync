@@ -239,8 +239,8 @@ export default function DashboardView({ data, predictions, trafficLevel, setTraf
           </select>
           {filterDept === 'All' ? 'All Departments' : filterDept} <ChevronDown size={14} />
         </div>
-        <div className="filter-pill" style={{ marginLeft: 'auto' }}>November 2026 <Calendar size={14} /></div>
-        <div className="filter-pill">December 2026 <Calendar size={14} /></div>
+        <div className="filter-pill" style={{ marginLeft: 'auto' }}>{new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })} <Calendar size={14} /></div>
+        <div className="filter-pill">{new Date(Date.now() + 30 * 86400000).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })} <Calendar size={14} /></div>
         <div className="filter-search">
           <input type="text" placeholder="Enter block ID #" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
           <Search size={14} color="var(--text-muted)" />
@@ -390,25 +390,30 @@ export default function DashboardView({ data, predictions, trafficLevel, setTraf
                 onClick={async () => {
                   if (!activeBlockData) return;
                   setIsApproving(true);
+                  setApprovalStatus(null);
                   try {
+                    // First create a plan record, then submit, then approve
+                    await fetch(`/plans/${activeBlockData.id}/submit?user=operator`, { method: 'POST' }).catch(() => {});
                     const response = await fetch(`/plans/${activeBlockData.id}/approve?user=operator`, { method: 'POST' });
                     if (response.ok) {
                       setApprovalStatus('success');
-                      setTimeout(() => setApprovalStatus(null), 3000);
+                      setTimeout(() => setApprovalStatus(null), 4000);
                     } else {
-                      // Fallback simulation if backend fails/unavailable
-                      setApprovalStatus('success');
-                      setTimeout(() => setApprovalStatus(null), 3000);
+                      const errData = await response.json().catch(() => ({}));
+                      console.error('Approval failed:', errData);
+                      setApprovalStatus('error');
+                      setTimeout(() => setApprovalStatus(null), 4000);
                     }
                   } catch (e) {
-                    setApprovalStatus('success');
-                    setTimeout(() => setApprovalStatus(null), 3000);
+                    console.error('Approval error:', e);
+                    setApprovalStatus('error');
+                    setTimeout(() => setApprovalStatus(null), 4000);
                   } finally {
                     setIsApproving(false);
                   }
                 }}
               >
-                {isApproving ? 'Approving...' : approvalStatus === 'success' ? 'Approved!' : 'Approve Plan'}
+                {isApproving ? 'Approving...' : approvalStatus === 'success' ? '✓ Approved!' : approvalStatus === 'error' ? '✗ Failed' : 'Approve Plan'}
               </button>
             </div>
           </div>

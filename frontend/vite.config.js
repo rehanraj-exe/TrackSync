@@ -12,7 +12,8 @@ export default defineConfig({
       '/plans': 'http://127.0.0.1:8000',
       '/what-if': 'http://127.0.0.1:8000',
       '/audit': 'http://127.0.0.1:8000',
-      '/chat': 'http://127.0.0.1:8000'
+      '/chat': 'http://127.0.0.1:8000',
+      '/corridors': 'http://127.0.0.1:8000'
     }
   }
 })

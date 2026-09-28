@@ -6,3 +6,123 @@ T004,TMS,Engineering,TRK-BC-332,Track,B-C,B,C,Tamping,5,6,3,2.0,Traffic block,20
 T005,SMMS,S&T,SIG-BC-044,Signal,B-C,B,C,Signal testing,6,7,0,1.0,Traffic block,2026-09-15,Monthly,2,7
 T006,TDMS,TRD,OHE-CD-091,OHE,C-D,C,D,Insulator replacement,4,5,10,2.0,Power block,2026-09-18,Quarterly,1,6
 T007,TMS,Engineering,TRK-CD-509,Track,C-D,C,D,Ultrasonic inspection,3,5,0,1.5,Traffic block,2026-09-25,Monthly,0,6
+T008,TMS,TRD,OHE-E-F-599,OHE,E-F,E,F,Wire tensioning,10,3,14,3.3,Power block,2026-10-10,Monthly,2,5
+T009,CMS,TRD,OHE-C-D-771,OHE,C-D,C,D,OHE maintenance,9,8,0,2.8,Power block,2026-10-09,Quarterly,1,7
+T010,TMS,S&T,SIG-D-E-591,Signal,D-E,D,E,Signal inspection,6,4,0,1.7,Traffic block,2026-10-20,Quarterly,2,6
+T011,TMS,Engineering,TRA-E-F-430,Track,E-F,E,F,Rail fracture,3,3,1,3.0,Traffic block,2026-10-04,Monthly,2,5
+T012,SMMS,TRD,OHE-A-B-669,OHE,A-B,A,B,Mast adjustment,9,7,0,2.9,Power block,2026-10-17,Quarterly,0,9
+T013,TMS,S&T,SIG-C-D-244,Signal,C-D,C,D,Relay check,7,6,0,1.2,Traffic block,2026-10-06,Quarterly,3,7
+T014,TDMS,Engineering,TRA-C-D-865,Track,C-D,C,D,Weld repair,3,6,0,2.1,Traffic block,2026-10-05,Monthly,1,7
+T015,SMMS,S&T,SIG-D-E-709,Signal,D-E,D,E,Point machine service,5,9,0,1.9,Traffic block,2026-10-23,Monthly,2,6
+T016,TMS,Engineering,TRA-A-B-916,Track,A-B,A,B,Rail fracture,6,6,12,2.2,Traffic block,2026-10-12,Monthly,3,9
+T017,TDMS,Engineering,TRA-D-E-283,Track,D-E,D,E,Rail fracture,3,3,0,4.0,Traffic block,2026-10-13,Quarterly,1,6
+T018,CMS,Engineering,TRA-A-B-238,Track,A-B,A,B,Ultrasonic inspection,9,10,3,3.8,Traffic block,2026-10-12,Monthly,4,9
+T019,CMS,TRD,OHE-A-B-385,OHE,A-B,A,B,Wire tensioning,3,10,0,3.6,Power block,2026-10-05,Quarterly,1,9
+T020,SMMS,S&T,SIG-B-C-216,Signal,B-C,B,C,Signal testing,10,9,0,1.5,Traffic block,2026-10-20,Bi-Annual,2,8
+T021,SMMS,S&T,SIG-A-B-715,Signal,A-B,A,B,Cable replacement,7,8,0,3.5,Traffic block,2026-10-20,Bi-Annual,2,9
+T022,TDMS,Engineering,TRA-E-F-354,Track,E-F,E,F,Weld repair,8,3,0,3.3,Traffic block,2026-10-02,Quarterly,4,5
+T023,TDMS,Engineering,TRA-C-D-787,Track,C-D,C,D,Rail fracture,7,3,0,2.6,Traffic block,2026-10-10,Bi-Annual,5,7
+T024,TMS,Engineering,TRA-A-B-605,Track,A-B,A,B,Ballast cleaning,6,8,0,1.2,Traffic block,2026-10-18,Quarterly,1,9
+T025,CMS,TRD,OHE-B-C-741,OHE,B-C,B,C,Pantograph check,8,9,0,2.8,Power block,2026-10-05,Monthly,1,8
+T026,TMS,S&T,SIG-D-E-980,Signal,D-E,D,E,Signal testing,9,9,0,3.9,Traffic block,2026-10-07,Quarterly,1,6
+T027,CMS,TRD,OHE-A-B-408,OHE,A-B,A,B,Insulator replacement,8,6,7,2.5,Power block,2026-10-05,Quarterly,5,9
+T028,TMS,TRD,OHE-D-E-464,OHE,D-E,D,E,OHE maintenance,5,8,0,3.1,Power block,2026-10-16,Monthly,4,6
+T029,TMS,TRD,OHE-E-F-226,OHE,E-F,E,F,OHE maintenance,4,4,0,2.2,Power block,2026-10-06,Monthly,3,5
+T030,CMS,Engineering,TRA-A-B-949,Track,A-B,A,B,Rail fracture,8,3,9,3.8,Traffic block,2026-10-25,Bi-Annual,5,9
+T031,CMS,S&T,SIG-A-B-483,Signal,A-B,A,B,Point machine service,3,7,0,3.3,Traffic block,2026-10-09,Bi-Annual,4,9
+T032,TDMS,Engineering,TRA-E-F-193,Track,E-F,E,F,Ballast cleaning,10,6,0,2.5,Traffic block,2026-10-04,Quarterly,5,5
+T033,SMMS,TRD,OHE-A-B-281,OHE,A-B,A,B,OHE maintenance,5,7,0,1.4,Power block,2026-10-14,Bi-Annual,4,9
+T034,TMS,TRD,OHE-E-F-584,OHE,E-F,E,F,Pantograph check,4,9,0,1.7,Power block,2026-10-13,Bi-Annual,4,5
+T035,TDMS,Engineering,TRA-D-E-419,Track,D-E,D,E,Ballast cleaning,9,3,0,1.5,Traffic block,2026-10-11,Monthly,3,6
+T036,TMS,S&T,SIG-B-C-632,Signal,B-C,B,C,Relay check,9,7,0,3.1,Traffic block,2026-10-21,Monthly,5,8
+T037,SMMS,S&T,SIG-A-B-682,Signal,A-B,A,B,Point machine service,6,8,1,2.0,Traffic block,2026-10-02,Monthly,0,9
+T038,TMS,TRD,OHE-E-F-674,OHE,E-F,E,F,Pantograph check,8,5,0,2.7,Power block,2026-10-23,Bi-Annual,2,5
+T039,TMS,TRD,OHE-A-B-968,OHE,A-B,A,B,Wire tensioning,5,5,10,2.1,Power block,2026-10-13,Quarterly,0,9
+T040,CMS,Engineering,TRA-E-F-617,Track,E-F,E,F,Tamping,5,4,0,1.0,Traffic block,2026-10-08,Bi-Annual,1,5
+T041,TMS,Engineering,TRA-B-C-787,Track,B-C,B,C,Rail fracture,10,9,0,1.5,Traffic block,2026-10-25,Quarterly,3,8
+T042,TDMS,S&T,SIG-A-B-882,Signal,A-B,A,B,Cable replacement,6,8,0,2.0,Traffic block,2026-10-25,Bi-Annual,2,9
+T043,CMS,S&T,SIG-C-D-654,Signal,C-D,C,D,Signal testing,6,3,0,3.5,Traffic block,2026-10-25,Quarterly,0,7
+T044,TDMS,TRD,OHE-A-B-159,OHE,A-B,A,B,OHE maintenance,7,6,0,3.1,Power block,2026-10-18,Quarterly,0,9
+T045,TMS,TRD,OHE-B-C-864,OHE,B-C,B,C,Pantograph check,6,10,13,3.3,Power block,2026-10-05,Quarterly,2,8
+T046,SMMS,TRD,OHE-C-D-192,OHE,C-D,C,D,Insulator replacement,8,3,0,1.1,Power block,2026-10-01,Monthly,5,7
+T047,TDMS,S&T,SIG-C-D-264,Signal,C-D,C,D,Relay check,8,3,0,1.3,Traffic block,2026-10-05,Quarterly,5,7
+T048,TMS,TRD,OHE-D-E-932,OHE,D-E,D,E,OHE maintenance,6,6,7,1.4,Power block,2026-10-21,Bi-Annual,0,6
+T049,SMMS,S&T,SIG-B-C-335,Signal,B-C,B,C,Point machine service,8,8,0,1.7,Traffic block,2026-10-26,Quarterly,2,8
+T050,CMS,TRD,OHE-B-C-584,OHE,B-C,B,C,Pantograph check,6,8,0,1.6,Power block,2026-10-20,Bi-Annual,4,8
+T051,CMS,S&T,SIG-C-D-476,Signal,C-D,C,D,Signal inspection,10,6,13,3.5,Traffic block,2026-10-27,Quarterly,3,7
+T052,SMMS,S&T,SIG-E-F-395,Signal,E-F,E,F,Relay check,5,5,0,3.0,Traffic block,2026-10-28,Quarterly,5,5
+T053,CMS,S&T,SIG-C-D-449,Signal,C-D,C,D,Signal testing,10,6,0,3.7,Traffic block,2026-10-23,Quarterly,3,7
+T054,CMS,S&T,SIG-C-D-497,Signal,C-D,C,D,Point machine service,3,10,1,3.4,Traffic block,2026-10-12,Monthly,0,7
+T055,TDMS,Engineering,TRA-C-D-952,Track,C-D,C,D,Tamping,3,7,0,1.9,Traffic block,2026-10-27,Monthly,1,7
+T056,TDMS,TRD,OHE-A-B-804,OHE,A-B,A,B,Pantograph check,8,4,0,2.5,Power block,2026-10-24,Monthly,5,9
+T057,CMS,TRD,OHE-E-F-199,OHE,E-F,E,F,Mast adjustment,5,3,0,4.0,Power block,2026-10-21,Bi-Annual,3,5
+T058,SMMS,S&T,SIG-A-B-873,Signal,A-B,A,B,Signal inspection,10,3,0,3.2,Traffic block,2026-10-05,Quarterly,3,9
+T059,SMMS,Engineering,TRA-E-F-709,Track,E-F,E,F,Ballast cleaning,7,3,0,3.8,Traffic block,2026-10-16,Quarterly,2,5
+T060,TMS,S&T,SIG-A-B-284,Signal,A-B,A,B,Signal inspection,8,9,0,1.5,Traffic block,2026-10-20,Monthly,0,9
+T061,CMS,TRD,OHE-A-B-953,OHE,A-B,A,B,Insulator replacement,3,4,0,2.7,Power block,2026-10-20,Quarterly,4,9
+T062,SMMS,TRD,OHE-C-D-483,OHE,C-D,C,D,Pantograph check,6,5,5,3.9,Power block,2026-10-12,Monthly,5,7
+T063,CMS,TRD,OHE-B-C-469,OHE,B-C,B,C,Pantograph check,9,10,1,1.1,Power block,2026-10-05,Monthly,3,8
+T064,SMMS,TRD,OHE-A-B-351,OHE,A-B,A,B,Insulator replacement,8,7,0,2.6,Power block,2026-10-04,Monthly,4,9
+T065,SMMS,S&T,SIG-C-D-487,Signal,C-D,C,D,Cable replacement,3,7,2,2.3,Traffic block,2026-10-26,Quarterly,3,7
+T066,SMMS,TRD,OHE-E-F-394,OHE,E-F,E,F,Wire tensioning,3,8,0,1.6,Power block,2026-10-18,Monthly,1,5
+T067,TDMS,Engineering,TRA-C-D-675,Track,C-D,C,D,Tamping,3,9,0,1.3,Traffic block,2026-10-13,Monthly,2,7
+T068,SMMS,TRD,OHE-B-C-360,OHE,B-C,B,C,Wire tensioning,8,10,0,1.4,Power block,2026-10-07,Quarterly,1,8
+T069,CMS,Engineering,TRA-C-D-540,Track,C-D,C,D,Ultrasonic inspection,9,8,0,2.4,Traffic block,2026-10-22,Bi-Annual,4,7
+T070,SMMS,Engineering,TRA-A-B-686,Track,A-B,A,B,Rail fracture,4,8,15,3.1,Traffic block,2026-10-14,Quarterly,2,9
+T071,CMS,Engineering,TRA-C-D-460,Track,C-D,C,D,Weld repair,7,8,7,1.5,Traffic block,2026-09-30,Monthly,3,7
+T072,TMS,S&T,SIG-A-B-253,Signal,A-B,A,B,Point machine service,5,7,15,2.6,Traffic block,2026-10-27,Quarterly,2,9
+T073,TMS,TRD,OHE-B-C-956,OHE,B-C,B,C,Pantograph check,4,6,0,2.2,Power block,2026-10-09,Monthly,4,8
+T074,TDMS,Engineering,TRA-D-E-147,Track,D-E,D,E,Rail fracture,8,3,1,3.1,Traffic block,2026-10-07,Quarterly,5,6
+T075,TDMS,Engineering,TRA-E-F-617,Track,E-F,E,F,Rail fracture,5,3,0,3.9,Traffic block,2026-10-10,Monthly,1,5
+T076,CMS,S&T,SIG-D-E-531,Signal,D-E,D,E,Cable replacement,8,5,0,1.1,Traffic block,2026-10-06,Quarterly,1,6
+T077,CMS,S&T,SIG-C-D-625,Signal,C-D,C,D,Signal inspection,6,7,0,1.9,Traffic block,2026-09-30,Monthly,1,7
+T078,CMS,S&T,SIG-C-D-492,Signal,C-D,C,D,Cable replacement,10,9,0,3.2,Traffic block,2026-10-19,Bi-Annual,3,7
+T079,CMS,S&T,SIG-B-C-202,Signal,B-C,B,C,Point machine service,4,4,0,2.5,Traffic block,2026-10-01,Monthly,4,8
+T080,SMMS,Engineering,TRA-B-C-516,Track,B-C,B,C,Ultrasonic inspection,6,4,0,3.9,Traffic block,2026-10-09,Bi-Annual,0,8
+T081,TDMS,S&T,SIG-E-F-152,Signal,E-F,E,F,Point machine service,5,6,8,2.4,Traffic block,2026-10-11,Bi-Annual,4,5
+T082,SMMS,TRD,OHE-A-B-862,OHE,A-B,A,B,Wire tensioning,10,8,6,3.9,Power block,2026-10-20,Monthly,3,9
+T083,SMMS,Engineering,TRA-E-F-984,Track,E-F,E,F,Ballast cleaning,7,6,0,2.0,Traffic block,2026-10-07,Bi-Annual,5,5
+T084,SMMS,TRD,OHE-A-B-307,OHE,A-B,A,B,Mast adjustment,9,3,12,3.9,Power block,2026-10-27,Quarterly,2,9
+T085,TDMS,S&T,SIG-A-B-369,Signal,A-B,A,B,Point machine service,5,3,0,2.6,Traffic block,2026-10-17,Quarterly,5,9
+T086,CMS,Engineering,TRA-B-C-877,Track,B-C,B,C,Tamping,5,5,0,1.9,Traffic block,2026-10-13,Bi-Annual,0,8
+T087,TMS,S&T,SIG-C-D-939,Signal,C-D,C,D,Relay check,5,8,0,1.5,Traffic block,2026-09-29,Bi-Annual,5,7
+T088,TMS,S&T,SIG-A-B-981,Signal,A-B,A,B,Signal inspection,7,4,0,2.7,Traffic block,2026-10-17,Monthly,3,9
+T089,CMS,TRD,OHE-B-C-512,OHE,B-C,B,C,Wire tensioning,9,5,0,2.0,Power block,2026-10-03,Bi-Annual,3,8
+T090,TDMS,S&T,SIG-C-D-990,Signal,C-D,C,D,Relay check,3,9,0,2.1,Traffic block,2026-10-12,Monthly,2,7
+T091,TDMS,TRD,OHE-C-D-333,OHE,C-D,C,D,Mast adjustment,8,3,11,3.8,Power block,2026-10-02,Monthly,3,7
+T092,CMS,S&T,SIG-D-E-800,Signal,D-E,D,E,Relay check,5,3,0,3.6,Traffic block,2026-10-09,Quarterly,3,6
+T093,CMS,Engineering,TRA-E-F-734,Track,E-F,E,F,Ballast cleaning,3,5,0,1.3,Traffic block,2026-10-15,Bi-Annual,2,5
+T094,CMS,S&T,SIG-C-D-744,Signal,C-D,C,D,Cable replacement,9,4,10,3.7,Traffic block,2026-10-22,Quarterly,0,7
+T095,TDMS,TRD,OHE-C-D-953,OHE,C-D,C,D,Mast adjustment,7,8,0,3.1,Power block,2026-10-19,Quarterly,4,7
+T096,TMS,TRD,OHE-A-B-171,OHE,A-B,A,B,Insulator replacement,3,9,0,3.7,Power block,2026-10-17,Monthly,1,9
+T097,CMS,S&T,SIG-B-C-519,Signal,B-C,B,C,Cable replacement,4,6,0,1.4,Traffic block,2026-10-28,Quarterly,1,8
+T098,SMMS,S&T,SIG-B-C-233,Signal,B-C,B,C,Relay check,10,3,0,3.1,Traffic block,2026-10-28,Monthly,0,8
+T099,CMS,Engineering,TRA-E-F-128,Track,E-F,E,F,Ultrasonic inspection,5,7,0,3.6,Traffic block,2026-10-06,Bi-Annual,5,5
+T100,SMMS,TRD,OHE-E-F-615,OHE,E-F,E,F,Wire tensioning,10,5,9,3.0,Power block,2026-10-23,Monthly,1,5
+T101,CMS,S&T,SIG-C-D-424,Signal,C-D,C,D,Signal inspection,7,10,6,3.9,Traffic block,2026-10-10,Quarterly,1,7
+T102,TMS,TRD,OHE-D-E-446,OHE,D-E,D,E,Insulator replacement,4,5,0,2.6,Power block,2026-10-05,Quarterly,4,6
+T103,CMS,S&T,SIG-C-D-129,Signal,C-D,C,D,Signal inspection,4,8,0,3.7,Traffic block,2026-10-18,Monthly,2,7
+T104,TMS,Engineering,TRA-D-E-787,Track,D-E,D,E,Weld repair,5,3,0,1.6,Traffic block,2026-10-05,Quarterly,5,6
+T105,CMS,TRD,OHE-D-E-548,OHE,D-E,D,E,Pantograph check,9,8,0,3.8,Power block,2026-10-25,Quarterly,2,6
+T106,CMS,TRD,OHE-D-E-314,OHE,D-E,D,E,Wire tensioning,4,3,0,3.5,Power block,2026-10-10,Bi-Annual,1,6
+T107,TMS,Engineering,TRA-B-C-895,Track,B-C,B,C,Weld repair,10,5,0,3.7,Traffic block,2026-10-11,Bi-Annual,1,8
+T108,SMMS,Engineering,TRA-B-C-955,Track,B-C,B,C,Ballast cleaning,9,6,0,1.6,Traffic block,2026-10-21,Bi-Annual,5,8
+T109,SMMS,Engineering,TRA-D-E-227,Track,D-E,D,E,Tamping,4,9,0,2.4,Traffic block,2026-10-24,Quarterly,0,6
+T110,TDMS,Engineering,TRA-B-C-747,Track,B-C,B,C,Weld repair,8,10,0,1.8,Traffic block,2026-10-12,Quarterly,4,8
+T111,TDMS,Engineering,TRA-D-E-530,Track,D-E,D,E,Tamping,10,4,0,2.2,Traffic block,2026-10-13,Quarterly,3,6
+T112,CMS,S&T,SIG-A-B-812,Signal,A-B,A,B,Cable replacement,6,5,10,3.7,Traffic block,2026-10-25,Bi-Annual,1,9
+T113,CMS,TRD,OHE-B-C-942,OHE,B-C,B,C,Wire tensioning,5,7,0,3.4,Power block,2026-10-06,Quarterly,3,8
+T114,CMS,TRD,OHE-C-D-727,OHE,C-D,C,D,Pantograph check,6,3,0,1.4,Power block,2026-10-28,Quarterly,2,7
+T115,TDMS,S&T,SIG-C-D-466,Signal,C-D,C,D,Point machine service,3,7,0,3.0,Traffic block,2026-10-21,Bi-Annual,5,7
+T116,SMMS,TRD,OHE-B-C-209,OHE,B-C,B,C,Pantograph check,8,8,0,1.7,Power block,2026-10-07,Quarterly,3,8
+T117,TDMS,Engineering,TRA-D-E-359,Track,D-E,D,E,Tamping,7,3,0,3.9,Traffic block,2026-10-13,Bi-Annual,4,6
+T118,CMS,S&T,SIG-A-B-311,Signal,A-B,A,B,Relay check,9,10,15,1.6,Traffic block,2026-10-07,Monthly,0,9
+T119,SMMS,TRD,OHE-C-D-374,OHE,C-D,C,D,Insulator replacement,7,5,0,3.7,Power block,2026-10-23,Quarterly,2,7
+T120,CMS,Engineering,TRA-D-E-977,Track,D-E,D,E,Tamping,7,5,0,3.0,Traffic block,2026-10-17,Monthly,5,6
+T121,TDMS,S&T,SIG-D-E-504,Signal,D-E,D,E,Signal testing,10,7,5,2.2,Traffic block,2026-10-26,Bi-Annual,2,6
+T122,CMS,TRD,OHE-D-E-748,OHE,D-E,D,E,Mast adjustment,10,7,15,2.9,Power block,2026-09-30,Monthly,4,6
+T123,TDMS,Engineering,TRA-E-F-647,Track,E-F,E,F,Tamping,8,4,0,1.5,Traffic block,2026-09-29,Quarterly,2,5
+T124,SMMS,S&T,SIG-C-D-142,Signal,C-D,C,D,Cable replacement,7,6,3,1.1,Traffic block,2026-10-09,Bi-Annual,1,7
+T125,TMS,S&T,SIG-C-D-104,Signal,C-D,C,D,Signal inspection,6,8,0,1.8,Traffic block,2026-10-11,Quarterly,3,7
+T126,CMS,TRD,OHE-C-D-638,OHE,C-D,C,D,Insulator replacement,6,5,13,1.1,Power block,2026-10-17,Monthly,1,7
+T127,SMMS,TRD,OHE-E-F-498,OHE,E-F,E,F,Mast adjustment,3,10,0,1.6,Power block,2026-10-09,Bi-Annual,0,5

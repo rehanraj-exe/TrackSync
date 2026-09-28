@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Filter, CheckCircle, Clock, AlertTriangle, ChevronDown, MoreHorizontal, ArrowRight } from 'lucide-react';
+import { Search, Filter, CheckCircle, Clock, AlertTriangle, ChevronDown, MoreHorizontal, ArrowRight, Download } from 'lucide-react';
 
 export default function OperationsView({ data, tasksData }) {
   const [activeTab, setActiveTab] = useState('blocks');

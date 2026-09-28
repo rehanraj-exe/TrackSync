@@ -43,37 +43,59 @@ if app:
             import pandas as pd
             import numpy as np
             
-            # Generate mock current assets to evaluate
-            np.random.seed(123)
-            num_assets = 50
-            asset_ids = [f"AST-{i:03d}" for i in range(1, num_assets+1)]
-            asset_types = np.random.choice([0, 1, 2], size=num_assets)
-            traffic_density = np.random.uniform(0.1, 1.0, size=num_assets)
-            failure_history = np.random.poisson(lam=1.5, size=num_assets)
-            days_since_maintenance = np.random.randint(10, 200, size=num_assets)
+            # Load real maintenance data
+            data_dir = Path(__file__).parent
+            tasks = pd.read_csv(data_dir / "maintenance_tasks.csv")
+            history = pd.read_csv(data_dir / "maintenance_history.csv")
+            corridors = pd.read_csv(data_dir / "corridor_reference.csv")
             
-            df = pd.DataFrame({
-                'asset_type': asset_types,
-                'traffic_density': traffic_density,
-                'failure_history': failure_history,
-                'days_since_maintenance': days_since_maintenance
-            })
+            # Build real asset features from tasks and history
+            asset_type_map = {"Track": 0, "Signal": 1, "OHE": 2}
+            records = []
             
-            probs = model.predict_proba(df)[:, 1] # Probability of defect (class 1)
+            # From current tasks
+            for _, row in tasks.iterrows():
+                at = str(row.get("asset_type", "Track")).strip()
+                records.append({
+                    "asset_id": str(row.get("asset_id", row.get("task_id", ""))),
+                    "type": at,
+                    "asset_type": asset_type_map.get(at, 0),
+                    "traffic_density": float(row.get("asset_criticality", 5)) / 10.0,
+                    "failure_history": int(row.get("failure_history", 0)),
+                    "days_since_maintenance": int(row.get("overdue_days", 0)) + 30,
+                })
+            
+            # From historical records
+            for _, row in history.iterrows():
+                at = str(row.get("asset_type", "Track")).strip()
+                records.append({
+                    "asset_id": f"H-{row.get('record_id', '')}",
+                    "type": at,
+                    "asset_type": asset_type_map.get(at, 0),
+                    "traffic_density": float(row.get("traffic_density", 0.5)),
+                    "failure_history": int(row.get("failure_history", 0)),
+                    "days_since_maintenance": int(row.get("overdue_days", 0)) + 30,
+                })
+            
+            if not records:
+                return {"high_risk_assets": []}
+            
+            df = pd.DataFrame(records)
+            feature_df = df[["asset_type", "traffic_density", "failure_history", "days_since_maintenance"]]
+            
+            probs = model.predict_proba(feature_df)[:, 1]
             
             results = []
-            for i in range(num_assets):
-                if probs[i] > 0.6: # High risk threshold
-                    types = {0: "Track", 1: "Signal", 2: "OHE"}
+            for i in range(len(df)):
+                if probs[i] > 0.5:
                     results.append({
-                        "asset_id": asset_ids[i],
-                        "type": types[asset_types[i]],
-                        "risk_probability": round(probs[i] * 100, 1),
-                        "days_since_maintenance": int(days_since_maintenance[i]),
-                        "failure_history": int(failure_history[i])
+                        "asset_id": df.iloc[i]["asset_id"],
+                        "type": df.iloc[i]["type"],
+                        "risk_probability": round(float(probs[i]) * 100, 1),
+                        "days_since_maintenance": int(df.iloc[i]["days_since_maintenance"]),
+                        "failure_history": int(df.iloc[i]["failure_history"])
                     })
                     
-            # Sort by risk descending
             results.sort(key=lambda x: x["risk_probability"], reverse=True)
             return {"high_risk_assets": results}
         except Exception as e:
@@ -99,6 +121,11 @@ if app:
     @app.post("/plans/{plan_id}/submit")
     def submit(plan_id: str, user: str = "operator"):
         try:
+            # Auto-create plan record if it doesn't exist yet
+            try:
+                service.workflow.get(plan_id)
+            except KeyError:
+                service.workflow.create(plan_id, user)
             return service.workflow.transition(plan_id, "SUBMITTED", user).__dict__
         except (KeyError, ValueError) as error:
             raise HTTPException(status_code=400, detail=str(error))
@@ -106,6 +133,14 @@ if app:
     @app.post("/plans/{plan_id}/approve")
     def approve(plan_id: str, user: str = "approver", comment: str = ""):
         try:
+            # Auto-create and submit plan if it doesn't exist yet
+            try:
+                record = service.workflow.get(plan_id)
+                if record.status == "DRAFT":
+                    service.workflow.transition(plan_id, "SUBMITTED", user)
+            except KeyError:
+                service.workflow.create(plan_id, user)
+                service.workflow.transition(plan_id, "SUBMITTED", user)
             return service.workflow.transition(plan_id, "APPROVED", user, comment).__dict__
         except (KeyError, ValueError) as error:
             raise HTTPException(status_code=400, detail=str(error))
@@ -114,43 +149,84 @@ if app:
     def audit():
         return service.workflow.audit()
 
+    @app.get("/corridors")
+    def get_corridors():
+        import pandas as pd
+        data_dir = Path(__file__).parent
+        try:
+            df = pd.read_csv(data_dir / "corridor_reference.csv")
+            return df.to_dict(orient="records")
+        except Exception:
+            return []
+
+    @app.get("/plans/{plan_id}/status")
+    def plan_status(plan_id: str):
+        try:
+            return service.workflow.get(plan_id).__dict__
+        except KeyError:
+            raise HTTPException(status_code=404, detail=f"Plan {plan_id} not found")
+
     if BaseModel:
         class ChatMessage(BaseModel):
             message: str
-            
+
         @app.post("/chat")
         def chat(chat_message: ChatMessage):
             msg = chat_message.message.lower()
             try:
-                # Get the current data and weekly run to answer dynamically
                 data = service.load()
                 tasks = service.score_tasks(data)
-                result = service.horizons().get("weekly")
-                
+                result = service.run("Weekly plan", "NORMAL", "ALL", 7)
+
                 if "critical" in msg or "priority" in msg:
                     critical_count = len(tasks[tasks["priority_class"] == "CRITICAL"])
-                    return {"response": f"I analyzed the current schedule. There are {critical_count} tasks marked as CRITICAL across all corridors. High priority tasks are prioritized by the CP-SAT engine."}
-                
+                    high_count = len(tasks[tasks["priority_class"] == "HIGH"])
+                    ids = ", ".join(tasks[tasks["priority_class"] == "CRITICAL"]["task_id"].tolist()[:5])
+                    return {"response": f"There are {critical_count} CRITICAL and {high_count} HIGH priority tasks. Critical IDs: {ids or 'none'}. These are prioritized by the CP-SAT engine."}
+
                 if "unscheduled" in msg or "unmet" in msg:
                     unmet = len(result.unmet_task_ids) if result else 0
-                    return {"response": f"Based on the latest weekly plan, there are {unmet} unscheduled tasks that could not be fit into the available blocks due to constraints."}
-                
+                    unmet_ids = ", ".join(result.unmet_task_ids[:5]) if result and result.unmet_task_ids else "none"
+                    return {"response": f"There are {unmet} unscheduled tasks. IDs: {unmet_ids}. Consider adding more block windows."}
+
                 if "delay" in msg or "train" in msg:
                     delay = result.total_delay_minutes if result else 0
-                    return {"response": f"The current weekly AI optimization plan has an estimated train delay impact of {delay:.1f} minutes, minimizing disruptions across {len(result.recommendations) if result else 0} blocks."}
-                    
+                    blocks_count = len(result.recommendations) if result else 0
+                    return {"response": f"Estimated train delay: {delay:.1f} minutes across {blocks_count} blocks. Low-traffic windows were selected to minimize disruptions."}
+
                 if "conflict" in msg or "violation" in msg or "resource" in msg:
                     violations = result.resource_violations if result else []
                     if not violations:
-                        return {"response": "I ran the optimization engine. No resource conflicts or department capacity violations were detected in the currently recommended block allocations."}
-                    else:
-                        v_str = ", ".join(violations)
-                        return {"response": f"Warning: The optimization engine detected the following capacity violations: {v_str}."}
-                    
-                if "department" in msg or "sync" in msg:
-                    util = (result.block_utilization * 100) if result else 0
-                    return {"response": f"Multi-department synchronization is active. Block utilization score is {util:.1f}%. The AI engine bundled tasks to maximize track utilization."}
+                        return {"response": "No resource conflicts or capacity violations detected. All departments have sufficient team-hours."}
+                    return {"response": f"Capacity violations: {'; '.join(violations)}. Consider redistributing workload."}
 
-                return {"response": "I am your AI Co-Pilot powered by the BDMS/COA optimization engine. Ask me about 'critical' tasks, 'unscheduled' tasks, 'train delays', or 'resource conflicts'."}
+                if "department" in msg or "sync" in msg or "coordination" in msg:
+                    util = (result.block_utilization * 100) if result else 0
+                    dept_summary = tasks.groupby("department")["task_id"].count().to_dict()
+                    dept_str = ", ".join(f"{k}: {v}" for k, v in dept_summary.items())
+                    return {"response": f"Block utilization: {util:.1f}%. Department workload: {dept_str}. Activities are bundled for maximum track utilization."}
+
+                if "overdue" in msg:
+                    overdue = tasks[tasks["overdue_days"] > 0]
+                    count = len(overdue)
+                    max_od = int(overdue["overdue_days"].max()) if not overdue.empty else 0
+                    return {"response": f"{count} overdue tasks. Most overdue: {max_od} days past deadline. These receive a priority boost."}
+
+                if "block" in msg or "schedule" in msg or "plan" in msg:
+                    return {"response": f"Weekly plan: {result.scheduled_tasks}/{result.total_tasks} tasks scheduled. Solver: {result.solver_status}. Utilization: {result.block_utilization*100:.0f}%."}
+
+                if "section" in msg or "corridor" in msg:
+                    sections = tasks["location"].value_counts().to_dict()
+                    s_str = ", ".join(f"{k}: {v}" for k, v in sections.items())
+                    return {"response": f"Tasks by section: {s_str}. Use the Risk Map for spatial assessments."}
+
+                if "status" in msg or "health" in msg or "system" in msg:
+                    return {"response": f"System operational. {result.total_tasks} tasks, {result.scheduled_tasks} scheduled. Solver: {result.solver_status}. {result.deadline_alerts} deadline alerts."}
+
+                if "help" in msg or "what can" in msg:
+                    return {"response": "I can help with: critical tasks, train delays, resource conflicts, unscheduled tasks, overdue items, block schedule, department sync, section status, system health."}
+
+                return {"response": f"AI Co-Pilot active. Tracking {result.total_tasks} tasks, {result.scheduled_tasks} scheduled. Ask about critical tasks, delays, conflicts, departments, or type 'help'."}
             except Exception as e:
-                return {"response": f"I encountered an error analyzing the data: {str(e)}"}
+                return {"response": f"Error analyzing data: {str(e)}"}
+

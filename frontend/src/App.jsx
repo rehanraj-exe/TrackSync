@@ -89,7 +89,7 @@ function App() {
     <div className="app-wrapper">
       
       {/* Top Navigation */}
-      <header className="top-nav">
+      <header className="top-nav" style={{ position: 'relative', zIndex: 1000 }}>
         
         {/* Brand */}
         <div className="brand">
@@ -97,7 +97,7 @@ function App() {
             <TrainFront size={28} />
           </div>
           <div className="brand-text">
-            <h1>BlockPlanner</h1>
+            <h1>Track Sync AI</h1>
             <p>Smart Operations, Better Railways</p>
           </div>
         </div>

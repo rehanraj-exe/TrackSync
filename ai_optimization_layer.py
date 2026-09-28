@@ -42,7 +42,11 @@ class Recommendation:
 
 
 class SyntheticDataAdapter:
-    """Standardize synthetic source extracts into planner-ready tables."""
+    """Standardize synthetic source extracts into planner-ready tables.
+
+    Dates in the static CSVs are shifted forward relative to *today* so the
+    scheduler always has valid future-dated tasks and blocks to work with.
+    """
 
     def __init__(self, data_dir: str = "."):
         self.data_dir = Path(data_dir)
@@ -62,6 +66,15 @@ class SyntheticDataAdapter:
         }
 
     @staticmethod
+    def _shift_dates(series: pd.Series) -> pd.Series:
+        """Shift a datetime series so its earliest date maps to today."""
+        if series.empty:
+            return series
+        earliest = series.min()
+        delta = pd.Timestamp.now().normalize() - earliest.normalize()
+        return series + delta
+
+    @staticmethod
     def _clean_tasks(tasks: pd.DataFrame) -> pd.DataFrame:
         tasks = tasks.copy()
         tasks.columns = [column.strip().lower() for column in tasks.columns]
@@ -72,7 +85,11 @@ class SyntheticDataAdapter:
         for column in numeric_columns:
             tasks[column] = pd.to_numeric(tasks[column], errors="coerce").fillna(0)
         tasks["deadline"] = pd.to_datetime(tasks["deadline"], errors="coerce")
-        return tasks.dropna(subset=["task_id", "department", "location", "deadline"])
+        tasks = tasks.dropna(subset=["task_id", "department", "location", "deadline"])
+        # Shift deadlines so the earliest is today + a few days
+        if not tasks.empty:
+            tasks["deadline"] = SyntheticDataAdapter._shift_dates(tasks["deadline"]) + pd.Timedelta(days=3)
+        return tasks
 
     @staticmethod
     def _clean_trains(trains: pd.DataFrame) -> pd.DataFrame:
@@ -82,6 +99,10 @@ class SyntheticDataAdapter:
         trains["traffic_density"] = pd.to_numeric(
             trains["traffic_density"], errors="coerce"
         ).fillna(0.5)
+        # Shift train times to be relative to today
+        if not trains.empty:
+            trains["arrival_time"] = SyntheticDataAdapter._shift_dates(trains["arrival_time"])
+            trains["departure_time"] = SyntheticDataAdapter._shift_dates(trains["departure_time"])
         return trains
 
     @staticmethod
@@ -96,6 +117,10 @@ class SyntheticDataAdapter:
         blocks["available_duration"] = pd.to_numeric(
             blocks["available_duration"], errors="coerce"
         ).fillna(0)
+        # Shift block dates so the earliest is today
+        if not blocks.empty:
+            blocks["start"] = SyntheticDataAdapter._shift_dates(blocks["start"])
+            blocks["end"] = SyntheticDataAdapter._shift_dates(blocks["end"])
         return blocks
 
     @staticmethod
@@ -105,6 +130,9 @@ class SyntheticDataAdapter:
         forecast["expected_traffic_intensity"] = pd.to_numeric(
             forecast["expected_traffic_intensity"], errors="coerce"
         ).fillna(0.5)
+        # Shift forecast dates
+        if not forecast.empty:
+            forecast["forecast_date"] = SyntheticDataAdapter._shift_dates(forecast["forecast_date"])
         return forecast
 
 
