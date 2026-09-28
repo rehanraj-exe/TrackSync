@@ -3,20 +3,20 @@ import { AlertTriangle, Shield, Activity, MapPin, ChevronRight } from 'lucide-re
 
 // Approximate positions for Indian railway sections on a simplified SVG map
 const SECTIONS = [
-  { id: 'A-B', name: 'Mumbai – Nagpur', startCity: 'Mumbai', endCity: 'Nagpur', x1: 150, y1: 340, x2: 290, y2: 260, distance: '42 km' },
-  { id: 'B-C', name: 'Nagpur – Kolkata', startCity: 'Nagpur', endCity: 'Kolkata', x1: 290, y1: 260, x2: 480, y2: 230, distance: '35 km' },
-  { id: 'C-D', name: 'Kolkata – Chennai', startCity: 'Kolkata', endCity: 'Chennai', x1: 480, y1: 230, x2: 340, y2: 430, distance: '48 km' },
-  { id: 'D-E', name: 'Chennai – Lucknow', startCity: 'Chennai', endCity: 'Lucknow', x1: 340, y1: 430, x2: 310, y2: 160, distance: '31 km' },
-  { id: 'E-F', name: 'Lucknow – Delhi', startCity: 'Lucknow', endCity: 'Delhi', x1: 310, y1: 160, x2: 230, y2: 120, distance: '27 km' },
+  { id: 'BCT-NGP', name: 'Mumbai – Nagpur', startCity: 'Mumbai', endCity: 'Nagpur', x1: 150, y1: 340, x2: 290, y2: 260, distance: '835 km' },
+  { id: 'NGP-HWH', name: 'Nagpur – Howrah', startCity: 'Nagpur', endCity: 'Howrah', x1: 290, y1: 260, x2: 480, y2: 230, distance: '1120 km' },
+  { id: 'HWH-MAS', name: 'Howrah – Chennai', startCity: 'Howrah', endCity: 'Chennai', x1: 480, y1: 230, x2: 340, y2: 430, distance: '1660 km' },
+  { id: 'MAS-LKO', name: 'Chennai – Lucknow', startCity: 'Chennai', endCity: 'Lucknow', x1: 340, y1: 430, x2: 310, y2: 160, distance: '1930 km' },
+  { id: 'LKO-NDLS', name: 'Lucknow – New Delhi', startCity: 'Lucknow', endCity: 'New Delhi', x1: 310, y1: 160, x2: 230, y2: 120, distance: '510 km' },
 ];
 
 const CITIES = [
-  { name: 'Mumbai', code: 'A', x: 150, y: 340 },
-  { name: 'Nagpur', code: 'B', x: 290, y: 260 },
-  { name: 'Kolkata', code: 'C', x: 480, y: 230 },
-  { name: 'Chennai', code: 'D', x: 340, y: 430 },
-  { name: 'Lucknow', code: 'E', x: 310, y: 160 },
-  { name: 'Delhi', code: 'F', x: 230, y: 120 },
+  { name: 'Mumbai', code: 'BCT', x: 150, y: 340 },
+  { name: 'Nagpur', code: 'NGP', x: 290, y: 260 },
+  { name: 'Howrah', code: 'HWH', x: 480, y: 230 },
+  { name: 'Chennai', code: 'MAS', x: 340, y: 430 },
+  { name: 'Lucknow', code: 'LKO', x: 310, y: 160 },
+  { name: 'New Delhi', code: 'NDLS', x: 230, y: 120 },
 ];
 
 function getRiskLevel(section, data) {

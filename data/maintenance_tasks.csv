@@ -1,128 +1,501 @@
 task_id,source_system,department,asset_id,asset_type,location,start_station,end_station,defect_type,severity,safety_criticality,overdue_days,estimated_duration,required_block_type,deadline,maintenance_frequency,failure_history,asset_criticality
-T001,TMS,Engineering,TRK-AB-745,Track,A-B,A,B,Rail fracture,8,9,12,2.0,Traffic block,2026-08-30,Monthly,3,9
-T002,SMMS,S&T,SIG-AB-021,Signal,A-B,A,B,Signal inspection,7,8,5,1.0,Traffic block,2026-09-02,Monthly,2,8
-T003,TDMS,TRD,OHE-AB-118,OHE,A-B,A,B,OHE maintenance,8,8,7,2.0,Power block,2026-09-05,Quarterly,4,9
-T004,TMS,Engineering,TRK-BC-332,Track,B-C,B,C,Tamping,5,6,3,2.0,Traffic block,2026-09-12,Monthly,1,7
-T005,SMMS,S&T,SIG-BC-044,Signal,B-C,B,C,Signal testing,6,7,0,1.0,Traffic block,2026-09-15,Monthly,2,7
-T006,TDMS,TRD,OHE-CD-091,OHE,C-D,C,D,Insulator replacement,4,5,10,2.0,Power block,2026-09-18,Quarterly,1,6
-T007,TMS,Engineering,TRK-CD-509,Track,C-D,C,D,Ultrasonic inspection,3,5,0,1.5,Traffic block,2026-09-25,Monthly,0,6
-T008,TMS,TRD,OHE-E-F-599,OHE,E-F,E,F,Wire tensioning,10,3,14,3.3,Power block,2026-10-10,Monthly,2,5
-T009,CMS,TRD,OHE-C-D-771,OHE,C-D,C,D,OHE maintenance,9,8,0,2.8,Power block,2026-10-09,Quarterly,1,7
-T010,TMS,S&T,SIG-D-E-591,Signal,D-E,D,E,Signal inspection,6,4,0,1.7,Traffic block,2026-10-20,Quarterly,2,6
-T011,TMS,Engineering,TRA-E-F-430,Track,E-F,E,F,Rail fracture,3,3,1,3.0,Traffic block,2026-10-04,Monthly,2,5
-T012,SMMS,TRD,OHE-A-B-669,OHE,A-B,A,B,Mast adjustment,9,7,0,2.9,Power block,2026-10-17,Quarterly,0,9
-T013,TMS,S&T,SIG-C-D-244,Signal,C-D,C,D,Relay check,7,6,0,1.2,Traffic block,2026-10-06,Quarterly,3,7
-T014,TDMS,Engineering,TRA-C-D-865,Track,C-D,C,D,Weld repair,3,6,0,2.1,Traffic block,2026-10-05,Monthly,1,7
-T015,SMMS,S&T,SIG-D-E-709,Signal,D-E,D,E,Point machine service,5,9,0,1.9,Traffic block,2026-10-23,Monthly,2,6
-T016,TMS,Engineering,TRA-A-B-916,Track,A-B,A,B,Rail fracture,6,6,12,2.2,Traffic block,2026-10-12,Monthly,3,9
-T017,TDMS,Engineering,TRA-D-E-283,Track,D-E,D,E,Rail fracture,3,3,0,4.0,Traffic block,2026-10-13,Quarterly,1,6
-T018,CMS,Engineering,TRA-A-B-238,Track,A-B,A,B,Ultrasonic inspection,9,10,3,3.8,Traffic block,2026-10-12,Monthly,4,9
-T019,CMS,TRD,OHE-A-B-385,OHE,A-B,A,B,Wire tensioning,3,10,0,3.6,Power block,2026-10-05,Quarterly,1,9
-T020,SMMS,S&T,SIG-B-C-216,Signal,B-C,B,C,Signal testing,10,9,0,1.5,Traffic block,2026-10-20,Bi-Annual,2,8
-T021,SMMS,S&T,SIG-A-B-715,Signal,A-B,A,B,Cable replacement,7,8,0,3.5,Traffic block,2026-10-20,Bi-Annual,2,9
-T022,TDMS,Engineering,TRA-E-F-354,Track,E-F,E,F,Weld repair,8,3,0,3.3,Traffic block,2026-10-02,Quarterly,4,5
-T023,TDMS,Engineering,TRA-C-D-787,Track,C-D,C,D,Rail fracture,7,3,0,2.6,Traffic block,2026-10-10,Bi-Annual,5,7
-T024,TMS,Engineering,TRA-A-B-605,Track,A-B,A,B,Ballast cleaning,6,8,0,1.2,Traffic block,2026-10-18,Quarterly,1,9
-T025,CMS,TRD,OHE-B-C-741,OHE,B-C,B,C,Pantograph check,8,9,0,2.8,Power block,2026-10-05,Monthly,1,8
-T026,TMS,S&T,SIG-D-E-980,Signal,D-E,D,E,Signal testing,9,9,0,3.9,Traffic block,2026-10-07,Quarterly,1,6
-T027,CMS,TRD,OHE-A-B-408,OHE,A-B,A,B,Insulator replacement,8,6,7,2.5,Power block,2026-10-05,Quarterly,5,9
-T028,TMS,TRD,OHE-D-E-464,OHE,D-E,D,E,OHE maintenance,5,8,0,3.1,Power block,2026-10-16,Monthly,4,6
-T029,TMS,TRD,OHE-E-F-226,OHE,E-F,E,F,OHE maintenance,4,4,0,2.2,Power block,2026-10-06,Monthly,3,5
-T030,CMS,Engineering,TRA-A-B-949,Track,A-B,A,B,Rail fracture,8,3,9,3.8,Traffic block,2026-10-25,Bi-Annual,5,9
-T031,CMS,S&T,SIG-A-B-483,Signal,A-B,A,B,Point machine service,3,7,0,3.3,Traffic block,2026-10-09,Bi-Annual,4,9
-T032,TDMS,Engineering,TRA-E-F-193,Track,E-F,E,F,Ballast cleaning,10,6,0,2.5,Traffic block,2026-10-04,Quarterly,5,5
-T033,SMMS,TRD,OHE-A-B-281,OHE,A-B,A,B,OHE maintenance,5,7,0,1.4,Power block,2026-10-14,Bi-Annual,4,9
-T034,TMS,TRD,OHE-E-F-584,OHE,E-F,E,F,Pantograph check,4,9,0,1.7,Power block,2026-10-13,Bi-Annual,4,5
-T035,TDMS,Engineering,TRA-D-E-419,Track,D-E,D,E,Ballast cleaning,9,3,0,1.5,Traffic block,2026-10-11,Monthly,3,6
-T036,TMS,S&T,SIG-B-C-632,Signal,B-C,B,C,Relay check,9,7,0,3.1,Traffic block,2026-10-21,Monthly,5,8
-T037,SMMS,S&T,SIG-A-B-682,Signal,A-B,A,B,Point machine service,6,8,1,2.0,Traffic block,2026-10-02,Monthly,0,9
-T038,TMS,TRD,OHE-E-F-674,OHE,E-F,E,F,Pantograph check,8,5,0,2.7,Power block,2026-10-23,Bi-Annual,2,5
-T039,TMS,TRD,OHE-A-B-968,OHE,A-B,A,B,Wire tensioning,5,5,10,2.1,Power block,2026-10-13,Quarterly,0,9
-T040,CMS,Engineering,TRA-E-F-617,Track,E-F,E,F,Tamping,5,4,0,1.0,Traffic block,2026-10-08,Bi-Annual,1,5
-T041,TMS,Engineering,TRA-B-C-787,Track,B-C,B,C,Rail fracture,10,9,0,1.5,Traffic block,2026-10-25,Quarterly,3,8
-T042,TDMS,S&T,SIG-A-B-882,Signal,A-B,A,B,Cable replacement,6,8,0,2.0,Traffic block,2026-10-25,Bi-Annual,2,9
-T043,CMS,S&T,SIG-C-D-654,Signal,C-D,C,D,Signal testing,6,3,0,3.5,Traffic block,2026-10-25,Quarterly,0,7
-T044,TDMS,TRD,OHE-A-B-159,OHE,A-B,A,B,OHE maintenance,7,6,0,3.1,Power block,2026-10-18,Quarterly,0,9
-T045,TMS,TRD,OHE-B-C-864,OHE,B-C,B,C,Pantograph check,6,10,13,3.3,Power block,2026-10-05,Quarterly,2,8
-T046,SMMS,TRD,OHE-C-D-192,OHE,C-D,C,D,Insulator replacement,8,3,0,1.1,Power block,2026-10-01,Monthly,5,7
-T047,TDMS,S&T,SIG-C-D-264,Signal,C-D,C,D,Relay check,8,3,0,1.3,Traffic block,2026-10-05,Quarterly,5,7
-T048,TMS,TRD,OHE-D-E-932,OHE,D-E,D,E,OHE maintenance,6,6,7,1.4,Power block,2026-10-21,Bi-Annual,0,6
-T049,SMMS,S&T,SIG-B-C-335,Signal,B-C,B,C,Point machine service,8,8,0,1.7,Traffic block,2026-10-26,Quarterly,2,8
-T050,CMS,TRD,OHE-B-C-584,OHE,B-C,B,C,Pantograph check,6,8,0,1.6,Power block,2026-10-20,Bi-Annual,4,8
-T051,CMS,S&T,SIG-C-D-476,Signal,C-D,C,D,Signal inspection,10,6,13,3.5,Traffic block,2026-10-27,Quarterly,3,7
-T052,SMMS,S&T,SIG-E-F-395,Signal,E-F,E,F,Relay check,5,5,0,3.0,Traffic block,2026-10-28,Quarterly,5,5
-T053,CMS,S&T,SIG-C-D-449,Signal,C-D,C,D,Signal testing,10,6,0,3.7,Traffic block,2026-10-23,Quarterly,3,7
-T054,CMS,S&T,SIG-C-D-497,Signal,C-D,C,D,Point machine service,3,10,1,3.4,Traffic block,2026-10-12,Monthly,0,7
-T055,TDMS,Engineering,TRA-C-D-952,Track,C-D,C,D,Tamping,3,7,0,1.9,Traffic block,2026-10-27,Monthly,1,7
-T056,TDMS,TRD,OHE-A-B-804,OHE,A-B,A,B,Pantograph check,8,4,0,2.5,Power block,2026-10-24,Monthly,5,9
-T057,CMS,TRD,OHE-E-F-199,OHE,E-F,E,F,Mast adjustment,5,3,0,4.0,Power block,2026-10-21,Bi-Annual,3,5
-T058,SMMS,S&T,SIG-A-B-873,Signal,A-B,A,B,Signal inspection,10,3,0,3.2,Traffic block,2026-10-05,Quarterly,3,9
-T059,SMMS,Engineering,TRA-E-F-709,Track,E-F,E,F,Ballast cleaning,7,3,0,3.8,Traffic block,2026-10-16,Quarterly,2,5
-T060,TMS,S&T,SIG-A-B-284,Signal,A-B,A,B,Signal inspection,8,9,0,1.5,Traffic block,2026-10-20,Monthly,0,9
-T061,CMS,TRD,OHE-A-B-953,OHE,A-B,A,B,Insulator replacement,3,4,0,2.7,Power block,2026-10-20,Quarterly,4,9
-T062,SMMS,TRD,OHE-C-D-483,OHE,C-D,C,D,Pantograph check,6,5,5,3.9,Power block,2026-10-12,Monthly,5,7
-T063,CMS,TRD,OHE-B-C-469,OHE,B-C,B,C,Pantograph check,9,10,1,1.1,Power block,2026-10-05,Monthly,3,8
-T064,SMMS,TRD,OHE-A-B-351,OHE,A-B,A,B,Insulator replacement,8,7,0,2.6,Power block,2026-10-04,Monthly,4,9
-T065,SMMS,S&T,SIG-C-D-487,Signal,C-D,C,D,Cable replacement,3,7,2,2.3,Traffic block,2026-10-26,Quarterly,3,7
-T066,SMMS,TRD,OHE-E-F-394,OHE,E-F,E,F,Wire tensioning,3,8,0,1.6,Power block,2026-10-18,Monthly,1,5
-T067,TDMS,Engineering,TRA-C-D-675,Track,C-D,C,D,Tamping,3,9,0,1.3,Traffic block,2026-10-13,Monthly,2,7
-T068,SMMS,TRD,OHE-B-C-360,OHE,B-C,B,C,Wire tensioning,8,10,0,1.4,Power block,2026-10-07,Quarterly,1,8
-T069,CMS,Engineering,TRA-C-D-540,Track,C-D,C,D,Ultrasonic inspection,9,8,0,2.4,Traffic block,2026-10-22,Bi-Annual,4,7
-T070,SMMS,Engineering,TRA-A-B-686,Track,A-B,A,B,Rail fracture,4,8,15,3.1,Traffic block,2026-10-14,Quarterly,2,9
-T071,CMS,Engineering,TRA-C-D-460,Track,C-D,C,D,Weld repair,7,8,7,1.5,Traffic block,2026-09-30,Monthly,3,7
-T072,TMS,S&T,SIG-A-B-253,Signal,A-B,A,B,Point machine service,5,7,15,2.6,Traffic block,2026-10-27,Quarterly,2,9
-T073,TMS,TRD,OHE-B-C-956,OHE,B-C,B,C,Pantograph check,4,6,0,2.2,Power block,2026-10-09,Monthly,4,8
-T074,TDMS,Engineering,TRA-D-E-147,Track,D-E,D,E,Rail fracture,8,3,1,3.1,Traffic block,2026-10-07,Quarterly,5,6
-T075,TDMS,Engineering,TRA-E-F-617,Track,E-F,E,F,Rail fracture,5,3,0,3.9,Traffic block,2026-10-10,Monthly,1,5
-T076,CMS,S&T,SIG-D-E-531,Signal,D-E,D,E,Cable replacement,8,5,0,1.1,Traffic block,2026-10-06,Quarterly,1,6
-T077,CMS,S&T,SIG-C-D-625,Signal,C-D,C,D,Signal inspection,6,7,0,1.9,Traffic block,2026-09-30,Monthly,1,7
-T078,CMS,S&T,SIG-C-D-492,Signal,C-D,C,D,Cable replacement,10,9,0,3.2,Traffic block,2026-10-19,Bi-Annual,3,7
-T079,CMS,S&T,SIG-B-C-202,Signal,B-C,B,C,Point machine service,4,4,0,2.5,Traffic block,2026-10-01,Monthly,4,8
-T080,SMMS,Engineering,TRA-B-C-516,Track,B-C,B,C,Ultrasonic inspection,6,4,0,3.9,Traffic block,2026-10-09,Bi-Annual,0,8
-T081,TDMS,S&T,SIG-E-F-152,Signal,E-F,E,F,Point machine service,5,6,8,2.4,Traffic block,2026-10-11,Bi-Annual,4,5
-T082,SMMS,TRD,OHE-A-B-862,OHE,A-B,A,B,Wire tensioning,10,8,6,3.9,Power block,2026-10-20,Monthly,3,9
-T083,SMMS,Engineering,TRA-E-F-984,Track,E-F,E,F,Ballast cleaning,7,6,0,2.0,Traffic block,2026-10-07,Bi-Annual,5,5
-T084,SMMS,TRD,OHE-A-B-307,OHE,A-B,A,B,Mast adjustment,9,3,12,3.9,Power block,2026-10-27,Quarterly,2,9
-T085,TDMS,S&T,SIG-A-B-369,Signal,A-B,A,B,Point machine service,5,3,0,2.6,Traffic block,2026-10-17,Quarterly,5,9
-T086,CMS,Engineering,TRA-B-C-877,Track,B-C,B,C,Tamping,5,5,0,1.9,Traffic block,2026-10-13,Bi-Annual,0,8
-T087,TMS,S&T,SIG-C-D-939,Signal,C-D,C,D,Relay check,5,8,0,1.5,Traffic block,2026-09-29,Bi-Annual,5,7
-T088,TMS,S&T,SIG-A-B-981,Signal,A-B,A,B,Signal inspection,7,4,0,2.7,Traffic block,2026-10-17,Monthly,3,9
-T089,CMS,TRD,OHE-B-C-512,OHE,B-C,B,C,Wire tensioning,9,5,0,2.0,Power block,2026-10-03,Bi-Annual,3,8
-T090,TDMS,S&T,SIG-C-D-990,Signal,C-D,C,D,Relay check,3,9,0,2.1,Traffic block,2026-10-12,Monthly,2,7
-T091,TDMS,TRD,OHE-C-D-333,OHE,C-D,C,D,Mast adjustment,8,3,11,3.8,Power block,2026-10-02,Monthly,3,7
-T092,CMS,S&T,SIG-D-E-800,Signal,D-E,D,E,Relay check,5,3,0,3.6,Traffic block,2026-10-09,Quarterly,3,6
-T093,CMS,Engineering,TRA-E-F-734,Track,E-F,E,F,Ballast cleaning,3,5,0,1.3,Traffic block,2026-10-15,Bi-Annual,2,5
-T094,CMS,S&T,SIG-C-D-744,Signal,C-D,C,D,Cable replacement,9,4,10,3.7,Traffic block,2026-10-22,Quarterly,0,7
-T095,TDMS,TRD,OHE-C-D-953,OHE,C-D,C,D,Mast adjustment,7,8,0,3.1,Power block,2026-10-19,Quarterly,4,7
-T096,TMS,TRD,OHE-A-B-171,OHE,A-B,A,B,Insulator replacement,3,9,0,3.7,Power block,2026-10-17,Monthly,1,9
-T097,CMS,S&T,SIG-B-C-519,Signal,B-C,B,C,Cable replacement,4,6,0,1.4,Traffic block,2026-10-28,Quarterly,1,8
-T098,SMMS,S&T,SIG-B-C-233,Signal,B-C,B,C,Relay check,10,3,0,3.1,Traffic block,2026-10-28,Monthly,0,8
-T099,CMS,Engineering,TRA-E-F-128,Track,E-F,E,F,Ultrasonic inspection,5,7,0,3.6,Traffic block,2026-10-06,Bi-Annual,5,5
-T100,SMMS,TRD,OHE-E-F-615,OHE,E-F,E,F,Wire tensioning,10,5,9,3.0,Power block,2026-10-23,Monthly,1,5
-T101,CMS,S&T,SIG-C-D-424,Signal,C-D,C,D,Signal inspection,7,10,6,3.9,Traffic block,2026-10-10,Quarterly,1,7
-T102,TMS,TRD,OHE-D-E-446,OHE,D-E,D,E,Insulator replacement,4,5,0,2.6,Power block,2026-10-05,Quarterly,4,6
-T103,CMS,S&T,SIG-C-D-129,Signal,C-D,C,D,Signal inspection,4,8,0,3.7,Traffic block,2026-10-18,Monthly,2,7
-T104,TMS,Engineering,TRA-D-E-787,Track,D-E,D,E,Weld repair,5,3,0,1.6,Traffic block,2026-10-05,Quarterly,5,6
-T105,CMS,TRD,OHE-D-E-548,OHE,D-E,D,E,Pantograph check,9,8,0,3.8,Power block,2026-10-25,Quarterly,2,6
-T106,CMS,TRD,OHE-D-E-314,OHE,D-E,D,E,Wire tensioning,4,3,0,3.5,Power block,2026-10-10,Bi-Annual,1,6
-T107,TMS,Engineering,TRA-B-C-895,Track,B-C,B,C,Weld repair,10,5,0,3.7,Traffic block,2026-10-11,Bi-Annual,1,8
-T108,SMMS,Engineering,TRA-B-C-955,Track,B-C,B,C,Ballast cleaning,9,6,0,1.6,Traffic block,2026-10-21,Bi-Annual,5,8
-T109,SMMS,Engineering,TRA-D-E-227,Track,D-E,D,E,Tamping,4,9,0,2.4,Traffic block,2026-10-24,Quarterly,0,6
-T110,TDMS,Engineering,TRA-B-C-747,Track,B-C,B,C,Weld repair,8,10,0,1.8,Traffic block,2026-10-12,Quarterly,4,8
-T111,TDMS,Engineering,TRA-D-E-530,Track,D-E,D,E,Tamping,10,4,0,2.2,Traffic block,2026-10-13,Quarterly,3,6
-T112,CMS,S&T,SIG-A-B-812,Signal,A-B,A,B,Cable replacement,6,5,10,3.7,Traffic block,2026-10-25,Bi-Annual,1,9
-T113,CMS,TRD,OHE-B-C-942,OHE,B-C,B,C,Wire tensioning,5,7,0,3.4,Power block,2026-10-06,Quarterly,3,8
-T114,CMS,TRD,OHE-C-D-727,OHE,C-D,C,D,Pantograph check,6,3,0,1.4,Power block,2026-10-28,Quarterly,2,7
-T115,TDMS,S&T,SIG-C-D-466,Signal,C-D,C,D,Point machine service,3,7,0,3.0,Traffic block,2026-10-21,Bi-Annual,5,7
-T116,SMMS,TRD,OHE-B-C-209,OHE,B-C,B,C,Pantograph check,8,8,0,1.7,Power block,2026-10-07,Quarterly,3,8
-T117,TDMS,Engineering,TRA-D-E-359,Track,D-E,D,E,Tamping,7,3,0,3.9,Traffic block,2026-10-13,Bi-Annual,4,6
-T118,CMS,S&T,SIG-A-B-311,Signal,A-B,A,B,Relay check,9,10,15,1.6,Traffic block,2026-10-07,Monthly,0,9
-T119,SMMS,TRD,OHE-C-D-374,OHE,C-D,C,D,Insulator replacement,7,5,0,3.7,Power block,2026-10-23,Quarterly,2,7
-T120,CMS,Engineering,TRA-D-E-977,Track,D-E,D,E,Tamping,7,5,0,3.0,Traffic block,2026-10-17,Monthly,5,6
-T121,TDMS,S&T,SIG-D-E-504,Signal,D-E,D,E,Signal testing,10,7,5,2.2,Traffic block,2026-10-26,Bi-Annual,2,6
-T122,CMS,TRD,OHE-D-E-748,OHE,D-E,D,E,Mast adjustment,10,7,15,2.9,Power block,2026-09-30,Monthly,4,6
-T123,TDMS,Engineering,TRA-E-F-647,Track,E-F,E,F,Tamping,8,4,0,1.5,Traffic block,2026-09-29,Quarterly,2,5
-T124,SMMS,S&T,SIG-C-D-142,Signal,C-D,C,D,Cable replacement,7,6,3,1.1,Traffic block,2026-10-09,Bi-Annual,1,7
-T125,TMS,S&T,SIG-C-D-104,Signal,C-D,C,D,Signal inspection,6,8,0,1.8,Traffic block,2026-10-11,Quarterly,3,7
-T126,CMS,TRD,OHE-C-D-638,OHE,C-D,C,D,Insulator replacement,6,5,13,1.1,Power block,2026-10-17,Monthly,1,7
-T127,SMMS,TRD,OHE-E-F-498,OHE,E-F,E,F,Mast adjustment,3,10,0,1.6,Power block,2026-10-09,Bi-Annual,0,5
+T0001,TMS,Engineering,TRK-HWH-MAS-242,Track,HWH-MAS,HWH,MAS,Tamping,8,3,0,3.7,Traffic block,2026-09-30,Conditional,3,4
+T0002,TMS,Engineering,PTS-NGP-HWH-716,Track,NGP-HWH,NGP,HWH,Tamping,3,7,0,2.9,Traffic block,2026-10-15,Annual,1,7
+T0003,TDMS,Engineering,TRA-NGP-HWH-448,Track,NGP-HWH,NGP,HWH,USFD testing,5,4,0,3.3,Traffic block,2026-10-01,Monthly,3,4
+T0004,TDMS,S&T,SIG-LKO-NDLS-847,Signal,LKO-NDLS,LKO,NDLS,Relay check,6,7,0,3.8,Traffic block,2026-09-30,Conditional,2,9
+T0005,TDMS,TRD,OHE-NGP-HWH-777,OHE,NGP-HWH,NGP,HWH,OHE maintenance,4,5,14,1.7,Power block,2026-09-14,Annual,2,7
+T0006,TDMS,Engineering,TRK-HWH-MAS-786,Track,HWH-MAS,HWH,MAS,Weld repair,5,8,11,1.2,Traffic block,2026-09-17,Quarterly,4,9
+T0007,SMMS,Engineering,TRA-MAS-LKO-755,Track,MAS-LKO,MAS,LKO,Deep screening,8,7,0,2.0,Traffic block,2026-10-22,Monthly,1,4
+T0008,TDMS,S&T,SIG-HWH-MAS-680,Signal,HWH-MAS,HWH,MAS,Signal inspection,8,5,0,2.5,Traffic block,2026-10-26,Annual,1,6
+T0009,SMMS,Engineering,TRA-LKO-NDLS-864,Track,LKO-NDLS,LKO,NDLS,Ultrasonic inspection,7,6,7,2.1,Traffic block,2026-09-21,Conditional,3,4
+T0010,TMS,Engineering,TRK-NGP-HWH-911,Track,NGP-HWH,NGP,HWH,USFD testing,8,6,0,2.2,Traffic block,2026-10-17,Annual,4,6
+T0011,TMS,TRD,TSS-BCT-NGP-887,OHE,BCT-NGP,BCT,NGP,Mast adjustment,8,5,0,2.3,Power block,2026-10-12,Monthly,5,9
+T0012,TDMS,TRD,OHE-NGP-HWH-991,OHE,NGP-HWH,NGP,HWH,Mast adjustment,8,5,9,2.8,Power block,2026-09-19,Bi-Annual,1,8
+T0013,TMS,TRD,OHE-HWH-MAS-214,OHE,HWH-MAS,HWH,MAS,Pantograph check,5,5,0,1.7,Power block,2026-10-16,Monthly,0,9
+T0014,CMS,Engineering,TRK-LKO-NDLS-775,Track,LKO-NDLS,LKO,NDLS,Tamping,6,7,0,2.6,Traffic block,2026-10-17,Annual,1,8
+T0015,SMMS,TRD,SP-HWH-MAS-765,OHE,HWH-MAS,HWH,MAS,Pantograph check,5,6,8,1.4,Power block,2026-09-20,Monthly,2,4
+T0016,SMMS,TRD,OHE-NGP-HWH-824,OHE,NGP-HWH,NGP,HWH,OHE maintenance,8,3,0,3.7,Power block,2026-10-25,Bi-Annual,0,8
+T0017,SMMS,S&T,AXL-MAS-LKO-235,Signal,MAS-LKO,MAS,LKO,Point machine service,10,8,0,3.4,Traffic block,2026-10-04,Monthly,0,9
+T0018,CMS,S&T,PNT-MAS-LKO-984,Signal,MAS-LKO,MAS,LKO,Axle counter reset,8,3,0,4.0,Traffic block,2026-10-01,Monthly,3,9
+T0019,TDMS,Engineering,TRK-NGP-HWH-649,Track,NGP-HWH,NGP,HWH,Tamping,6,4,0,1.8,Traffic block,2026-10-05,Monthly,3,8
+T0020,TMS,Engineering,TRK-LKO-NDLS-871,Track,LKO-NDLS,LKO,NDLS,Rail fracture,8,8,0,2.4,Traffic block,2026-10-25,Annual,0,5
+T0021,CMS,Engineering,TRA-MAS-LKO-392,Track,MAS-LKO,MAS,LKO,Weld repair,6,8,13,2.7,Traffic block,2026-09-15,Annual,1,5
+T0022,TDMS,Engineering,PTS-BCT-NGP-655,Track,BCT-NGP,BCT,NGP,Ultrasonic inspection,3,8,0,1.2,Traffic block,2026-10-13,Conditional,4,5
+T0023,TMS,TRD,OHE-BCT-NGP-709,OHE,BCT-NGP,BCT,NGP,Insulator replacement,3,8,7,1.4,Power block,2026-09-21,Conditional,1,8
+T0024,TMS,TRD,SP-BCT-NGP-697,OHE,BCT-NGP,BCT,NGP,Pantograph check,7,7,0,1.8,Power block,2026-10-19,Bi-Annual,1,6
+T0025,CMS,Engineering,TRA-HWH-MAS-869,Track,HWH-MAS,HWH,MAS,Deep screening,3,3,0,4.0,Traffic block,2026-10-01,Monthly,4,5
+T0026,TDMS,Engineering,TRK-HWH-MAS-478,Track,HWH-MAS,HWH,MAS,Rail fracture,9,8,0,2.6,Traffic block,2026-10-07,Conditional,5,8
+T0027,TMS,TRD,SP-LKO-NDLS-206,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,8,9,0,1.3,Power block,2026-10-15,Quarterly,2,6
+T0028,SMMS,TRD,SP-HWH-MAS-749,OHE,HWH-MAS,HWH,MAS,Insulator replacement,5,7,0,3.7,Power block,2026-10-25,Monthly,0,9
+T0029,CMS,S&T,PNT-BCT-NGP-889,Signal,BCT-NGP,BCT,NGP,Signal inspection,4,8,3,3.2,Traffic block,2026-09-25,Annual,4,4
+T0030,TMS,Engineering,TRK-NGP-HWH-954,Track,NGP-HWH,NGP,HWH,Ultrasonic inspection,5,7,0,2.3,Traffic block,2026-09-29,Bi-Annual,2,4
+T0031,TDMS,Engineering,TRK-NGP-HWH-462,Track,NGP-HWH,NGP,HWH,USFD testing,7,6,12,1.5,Traffic block,2026-09-16,Quarterly,1,5
+T0032,CMS,Engineering,TRA-NGP-HWH-901,Track,NGP-HWH,NGP,HWH,USFD testing,6,8,13,1.7,Traffic block,2026-09-15,Monthly,3,4
+T0033,CMS,Engineering,TRA-NGP-HWH-412,Track,NGP-HWH,NGP,HWH,Deep screening,4,4,0,1.6,Traffic block,2026-10-08,Bi-Annual,0,6
+T0034,TDMS,TRD,SP-LKO-NDLS-963,OHE,LKO-NDLS,LKO,NDLS,Pantograph check,7,5,2,3.6,Power block,2026-09-26,Quarterly,4,6
+T0035,TMS,Engineering,TRA-LKO-NDLS-846,Track,LKO-NDLS,LKO,NDLS,Deep screening,5,6,0,2.5,Traffic block,2026-10-10,Conditional,1,6
+T0036,TMS,TRD,SP-MAS-LKO-925,OHE,MAS-LKO,MAS,LKO,OHE maintenance,7,8,0,3.2,Power block,2026-10-19,Quarterly,2,7
+T0037,TMS,TRD,TSS-HWH-MAS-779,OHE,HWH-MAS,HWH,MAS,Mast adjustment,3,8,9,1.9,Power block,2026-09-19,Bi-Annual,3,9
+T0038,TDMS,TRD,TSS-NGP-HWH-780,OHE,NGP-HWH,NGP,HWH,Insulator replacement,6,8,0,1.5,Power block,2026-10-16,Bi-Annual,3,8
+T0039,TMS,S&T,PNT-HWH-MAS-904,Signal,HWH-MAS,HWH,MAS,Point machine service,9,10,0,3.0,Traffic block,2026-10-14,Annual,5,5
+T0040,TMS,S&T,PNT-LKO-NDLS-195,Signal,LKO-NDLS,LKO,NDLS,Cable insulation test,4,8,0,3.4,Traffic block,2026-10-02,Monthly,0,5
+T0041,CMS,TRD,TSS-BCT-NGP-744,OHE,BCT-NGP,BCT,NGP,Pantograph check,7,4,0,2.2,Power block,2026-10-10,Quarterly,1,9
+T0042,TMS,Engineering,TRK-MAS-LKO-923,Track,MAS-LKO,MAS,LKO,Tamping,8,7,0,2.7,Traffic block,2026-10-27,Monthly,3,5
+T0043,CMS,TRD,SP-LKO-NDLS-424,OHE,LKO-NDLS,LKO,NDLS,Mast adjustment,6,7,15,2.5,Power block,2026-09-13,Conditional,3,5
+T0044,CMS,S&T,AXL-HWH-MAS-383,Signal,HWH-MAS,HWH,MAS,Point machine service,10,8,0,1.2,Traffic block,2026-10-07,Quarterly,2,6
+T0045,TDMS,TRD,OHE-BCT-NGP-336,OHE,BCT-NGP,BCT,NGP,Insulator replacement,6,8,0,1.6,Power block,2026-10-11,Annual,2,8
+T0046,CMS,S&T,PNT-BCT-NGP-498,Signal,BCT-NGP,BCT,NGP,Point machine service,7,10,0,3.8,Traffic block,2026-10-07,Annual,3,8
+T0047,SMMS,S&T,PNT-NGP-HWH-597,Signal,NGP-HWH,NGP,HWH,Relay check,3,6,0,3.0,Traffic block,2026-10-10,Quarterly,3,5
+T0048,TMS,S&T,AXL-LKO-NDLS-127,Signal,LKO-NDLS,LKO,NDLS,Cable insulation test,3,8,0,3.6,Traffic block,2026-10-03,Monthly,2,7
+T0049,TDMS,Engineering,TRA-MAS-LKO-879,Track,MAS-LKO,MAS,LKO,Weld repair,6,5,0,3.5,Traffic block,2026-10-06,Monthly,3,4
+T0050,TMS,S&T,AXL-NGP-HWH-141,Signal,NGP-HWH,NGP,HWH,Signal inspection,3,4,0,1.1,Traffic block,2026-10-02,Quarterly,1,7
+T0051,TMS,TRD,SP-NGP-HWH-362,OHE,NGP-HWH,NGP,HWH,Pantograph check,5,4,0,3.9,Power block,2026-10-20,Monthly,1,6
+T0052,TMS,TRD,SP-BCT-NGP-793,OHE,BCT-NGP,BCT,NGP,Wire tensioning,10,10,4,1.2,Power block,2026-09-24,Quarterly,0,9
+T0053,TDMS,TRD,SP-LKO-NDLS-901,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,3,5,0,3.0,Power block,2026-09-30,Conditional,5,6
+T0054,TMS,S&T,PNT-MAS-LKO-470,Signal,MAS-LKO,MAS,LKO,Signal inspection,8,6,0,2.3,Traffic block,2026-10-21,Conditional,5,6
+T0055,CMS,S&T,PNT-MAS-LKO-430,Signal,MAS-LKO,MAS,LKO,Cable insulation test,4,3,0,2.4,Traffic block,2026-10-22,Annual,4,8
+T0056,CMS,S&T,PNT-BCT-NGP-286,Signal,BCT-NGP,BCT,NGP,Axle counter reset,6,4,0,1.8,Traffic block,2026-10-06,Conditional,5,6
+T0057,TMS,TRD,OHE-NGP-HWH-837,OHE,NGP-HWH,NGP,HWH,OHE maintenance,6,6,0,1.7,Power block,2026-10-13,Annual,3,4
+T0058,TMS,S&T,AXL-NGP-HWH-349,Signal,NGP-HWH,NGP,HWH,Axle counter reset,5,8,0,2.4,Traffic block,2026-10-14,Bi-Annual,3,9
+T0059,TDMS,S&T,PNT-MAS-LKO-357,Signal,MAS-LKO,MAS,LKO,Relay check,4,3,0,1.9,Traffic block,2026-10-21,Conditional,5,5
+T0060,SMMS,Engineering,PTS-MAS-LKO-703,Track,MAS-LKO,MAS,LKO,Weld repair,7,7,0,1.3,Traffic block,2026-10-04,Bi-Annual,1,6
+T0061,SMMS,S&T,SIG-BCT-NGP-380,Signal,BCT-NGP,BCT,NGP,Cable insulation test,3,3,0,3.1,Traffic block,2026-10-02,Annual,0,4
+T0062,TDMS,S&T,PNT-MAS-LKO-288,Signal,MAS-LKO,MAS,LKO,Axle counter reset,3,5,8,1.3,Traffic block,2026-09-20,Annual,3,4
+T0063,TMS,Engineering,TRA-NGP-HWH-187,Track,NGP-HWH,NGP,HWH,Ultrasonic inspection,4,3,0,2.2,Traffic block,2026-10-17,Conditional,1,8
+T0064,CMS,S&T,AXL-MAS-LKO-539,Signal,MAS-LKO,MAS,LKO,Relay check,5,7,0,2.8,Traffic block,2026-10-21,Monthly,1,9
+T0065,SMMS,S&T,SIG-BCT-NGP-277,Signal,BCT-NGP,BCT,NGP,Point machine service,7,8,0,2.4,Traffic block,2026-10-17,Annual,2,4
+T0066,SMMS,S&T,SIG-HWH-MAS-803,Signal,HWH-MAS,HWH,MAS,Axle counter reset,4,5,0,2.9,Traffic block,2026-10-19,Quarterly,3,4
+T0067,SMMS,TRD,OHE-NGP-HWH-173,OHE,NGP-HWH,NGP,HWH,Wire tensioning,7,8,0,2.8,Power block,2026-10-24,Conditional,2,7
+T0068,TMS,S&T,PNT-HWH-MAS-612,Signal,HWH-MAS,HWH,MAS,Axle counter reset,7,6,0,2.8,Traffic block,2026-10-26,Annual,5,6
+T0069,TDMS,Engineering,PTS-BCT-NGP-956,Track,BCT-NGP,BCT,NGP,Tamping,7,7,13,3.0,Traffic block,2026-09-15,Conditional,0,5
+T0070,CMS,TRD,OHE-MAS-LKO-699,OHE,MAS-LKO,MAS,LKO,Wire tensioning,10,10,8,2.0,Power block,2026-09-20,Bi-Annual,5,4
+T0071,SMMS,S&T,PNT-MAS-LKO-778,Signal,MAS-LKO,MAS,LKO,Axle counter reset,6,7,0,1.3,Traffic block,2026-10-06,Bi-Annual,0,7
+T0072,TMS,TRD,TSS-LKO-NDLS-155,OHE,LKO-NDLS,LKO,NDLS,Pantograph check,4,7,0,3.3,Power block,2026-10-18,Annual,0,5
+T0073,TDMS,TRD,TSS-NGP-HWH-815,OHE,NGP-HWH,NGP,HWH,Wire tensioning,10,7,0,2.9,Power block,2026-10-23,Quarterly,5,5
+T0074,TDMS,TRD,TSS-BCT-NGP-195,OHE,BCT-NGP,BCT,NGP,Mast adjustment,4,3,0,1.4,Power block,2026-10-24,Quarterly,3,9
+T0075,TDMS,TRD,TSS-HWH-MAS-583,OHE,HWH-MAS,HWH,MAS,Pantograph check,4,6,0,2.2,Power block,2026-10-27,Conditional,4,9
+T0076,SMMS,Engineering,TRA-HWH-MAS-906,Track,HWH-MAS,HWH,MAS,Deep screening,7,5,5,3.2,Traffic block,2026-09-23,Conditional,4,9
+T0077,CMS,Engineering,TRA-MAS-LKO-453,Track,MAS-LKO,MAS,LKO,Ultrasonic inspection,5,7,0,2.1,Traffic block,2026-10-27,Bi-Annual,1,9
+T0078,SMMS,TRD,TSS-MAS-LKO-144,OHE,MAS-LKO,MAS,LKO,Insulator replacement,5,8,0,3.7,Power block,2026-10-10,Annual,5,9
+T0079,SMMS,S&T,AXL-BCT-NGP-704,Signal,BCT-NGP,BCT,NGP,Point machine service,9,7,8,1.3,Traffic block,2026-09-20,Annual,0,9
+T0080,SMMS,S&T,PNT-NGP-HWH-900,Signal,NGP-HWH,NGP,HWH,Signal inspection,5,5,0,2.2,Traffic block,2026-09-30,Bi-Annual,5,8
+T0081,CMS,S&T,SIG-MAS-LKO-732,Signal,MAS-LKO,MAS,LKO,Cable insulation test,3,4,0,3.8,Traffic block,2026-10-05,Monthly,3,4
+T0082,TMS,S&T,SIG-NGP-HWH-147,Signal,NGP-HWH,NGP,HWH,Relay check,5,3,0,2.1,Traffic block,2026-10-02,Quarterly,4,7
+T0083,SMMS,Engineering,PTS-NGP-HWH-991,Track,NGP-HWH,NGP,HWH,Rail fracture,10,8,0,2.7,Traffic block,2026-10-05,Annual,5,6
+T0084,CMS,S&T,PNT-BCT-NGP-793,Signal,BCT-NGP,BCT,NGP,Axle counter reset,7,4,0,3.8,Traffic block,2026-10-16,Bi-Annual,5,7
+T0085,TDMS,S&T,PNT-HWH-MAS-973,Signal,HWH-MAS,HWH,MAS,Point machine service,10,7,0,2.7,Traffic block,2026-10-16,Bi-Annual,5,6
+T0086,TMS,TRD,OHE-MAS-LKO-679,OHE,MAS-LKO,MAS,LKO,Wire tensioning,7,10,15,1.9,Power block,2026-09-13,Quarterly,4,6
+T0087,SMMS,TRD,TSS-NGP-HWH-794,OHE,NGP-HWH,NGP,HWH,Mast adjustment,8,8,0,1.4,Power block,2026-10-01,Monthly,2,7
+T0088,TMS,TRD,OHE-HWH-MAS-402,OHE,HWH-MAS,HWH,MAS,Insulator replacement,5,8,0,1.6,Power block,2026-10-23,Conditional,2,8
+T0089,TDMS,Engineering,TRA-HWH-MAS-864,Track,HWH-MAS,HWH,MAS,Deep screening,5,3,0,1.2,Traffic block,2026-10-22,Quarterly,5,9
+T0090,CMS,TRD,TSS-HWH-MAS-114,OHE,HWH-MAS,HWH,MAS,OHE maintenance,5,7,0,2.1,Power block,2026-10-21,Bi-Annual,4,7
+T0091,TDMS,Engineering,TRK-NGP-HWH-734,Track,NGP-HWH,NGP,HWH,Deep screening,7,5,4,2.9,Traffic block,2026-09-24,Annual,5,6
+T0092,CMS,Engineering,TRK-NGP-HWH-411,Track,NGP-HWH,NGP,HWH,Rail fracture,10,7,0,3.7,Traffic block,2026-10-02,Annual,3,6
+T0093,CMS,TRD,SP-NGP-HWH-201,OHE,NGP-HWH,NGP,HWH,Pantograph check,6,7,0,3.9,Power block,2026-09-29,Bi-Annual,1,7
+T0094,CMS,Engineering,PTS-HWH-MAS-476,Track,HWH-MAS,HWH,MAS,Rail fracture,9,7,0,1.6,Traffic block,2026-10-01,Annual,0,9
+T0095,SMMS,TRD,OHE-LKO-NDLS-905,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,5,4,13,2.7,Power block,2026-09-15,Conditional,1,8
+T0096,SMMS,Engineering,PTS-HWH-MAS-102,Track,HWH-MAS,HWH,MAS,Tamping,5,4,9,1.8,Traffic block,2026-09-19,Monthly,5,4
+T0097,SMMS,Engineering,PTS-HWH-MAS-431,Track,HWH-MAS,HWH,MAS,Tamping,3,4,0,1.4,Traffic block,2026-10-11,Conditional,0,9
+T0098,TMS,S&T,AXL-MAS-LKO-707,Signal,MAS-LKO,MAS,LKO,Relay check,3,6,0,3.8,Traffic block,2026-09-29,Conditional,2,7
+T0099,TMS,Engineering,TRA-MAS-LKO-802,Track,MAS-LKO,MAS,LKO,Deep screening,3,6,0,2.3,Traffic block,2026-10-26,Monthly,2,8
+T0100,SMMS,Engineering,PTS-NGP-HWH-748,Track,NGP-HWH,NGP,HWH,Weld repair,7,7,0,2.1,Traffic block,2026-10-17,Conditional,2,7
+T0101,CMS,Engineering,PTS-BCT-NGP-998,Track,BCT-NGP,BCT,NGP,USFD testing,7,8,7,2.4,Traffic block,2026-09-21,Annual,2,7
+T0102,CMS,S&T,PNT-BCT-NGP-420,Signal,BCT-NGP,BCT,NGP,Relay check,8,5,0,1.5,Traffic block,2026-10-27,Annual,0,4
+T0103,TMS,Engineering,PTS-MAS-LKO-856,Track,MAS-LKO,MAS,LKO,Rail fracture,9,8,0,2.8,Traffic block,2026-10-15,Conditional,2,9
+T0104,TMS,S&T,AXL-HWH-MAS-152,Signal,HWH-MAS,HWH,MAS,Axle counter reset,5,7,0,1.3,Traffic block,2026-10-14,Quarterly,1,9
+T0105,CMS,Engineering,PTS-BCT-NGP-476,Track,BCT-NGP,BCT,NGP,Weld repair,3,5,0,3.4,Traffic block,2026-10-25,Conditional,4,8
+T0106,TMS,TRD,OHE-HWH-MAS-379,OHE,HWH-MAS,HWH,MAS,OHE maintenance,8,5,6,1.0,Power block,2026-09-22,Quarterly,4,9
+T0107,CMS,Engineering,PTS-NGP-HWH-131,Track,NGP-HWH,NGP,HWH,USFD testing,3,8,0,2.1,Traffic block,2026-10-12,Bi-Annual,1,6
+T0108,TDMS,TRD,SP-HWH-MAS-186,OHE,HWH-MAS,HWH,MAS,Mast adjustment,3,4,0,2.9,Power block,2026-10-19,Monthly,2,7
+T0109,CMS,S&T,PNT-LKO-NDLS-379,Signal,LKO-NDLS,LKO,NDLS,Axle counter reset,4,7,0,2.3,Traffic block,2026-10-07,Conditional,3,8
+T0110,TDMS,Engineering,PTS-NGP-HWH-156,Track,NGP-HWH,NGP,HWH,Deep screening,3,4,0,1.6,Traffic block,2026-10-02,Bi-Annual,2,6
+T0111,TMS,Engineering,TRA-MAS-LKO-279,Track,MAS-LKO,MAS,LKO,USFD testing,4,6,0,1.7,Traffic block,2026-10-15,Bi-Annual,0,7
+T0112,TMS,S&T,SIG-BCT-NGP-982,Signal,BCT-NGP,BCT,NGP,Axle counter reset,5,7,0,2.2,Traffic block,2026-10-18,Annual,2,4
+T0113,CMS,Engineering,PTS-HWH-MAS-571,Track,HWH-MAS,HWH,MAS,Tamping,8,5,0,3.5,Traffic block,2026-10-05,Annual,4,7
+T0114,TMS,S&T,SIG-HWH-MAS-441,Signal,HWH-MAS,HWH,MAS,Relay check,4,3,0,1.3,Traffic block,2026-10-14,Quarterly,2,6
+T0115,SMMS,Engineering,TRA-BCT-NGP-302,Track,BCT-NGP,BCT,NGP,Tamping,4,7,0,3.3,Traffic block,2026-09-30,Quarterly,5,7
+T0116,CMS,TRD,SP-LKO-NDLS-678,OHE,LKO-NDLS,LKO,NDLS,Pantograph check,8,8,6,3.6,Power block,2026-09-22,Bi-Annual,1,7
+T0117,TMS,S&T,PNT-MAS-LKO-705,Signal,MAS-LKO,MAS,LKO,Relay check,3,5,0,1.9,Traffic block,2026-10-12,Monthly,0,6
+T0118,TDMS,Engineering,PTS-BCT-NGP-619,Track,BCT-NGP,BCT,NGP,Ultrasonic inspection,6,6,0,3.9,Traffic block,2026-10-21,Monthly,3,8
+T0119,SMMS,S&T,AXL-LKO-NDLS-254,Signal,LKO-NDLS,LKO,NDLS,Axle counter reset,3,6,0,3.7,Traffic block,2026-10-08,Monthly,4,9
+T0120,SMMS,Engineering,TRA-NGP-HWH-549,Track,NGP-HWH,NGP,HWH,USFD testing,7,7,0,2.1,Traffic block,2026-10-27,Bi-Annual,3,7
+T0121,TDMS,TRD,SP-LKO-NDLS-762,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,5,3,0,2.7,Power block,2026-10-10,Bi-Annual,2,9
+T0122,SMMS,S&T,AXL-BCT-NGP-244,Signal,BCT-NGP,BCT,NGP,Cable insulation test,5,5,12,3.0,Traffic block,2026-09-16,Conditional,5,4
+T0123,TDMS,TRD,OHE-MAS-LKO-786,OHE,MAS-LKO,MAS,LKO,Wire tensioning,7,10,0,1.1,Power block,2026-10-07,Quarterly,1,6
+T0124,CMS,Engineering,TRK-NGP-HWH-179,Track,NGP-HWH,NGP,HWH,Tamping,5,3,0,2.6,Traffic block,2026-10-21,Conditional,0,9
+T0125,TDMS,TRD,TSS-NGP-HWH-257,OHE,NGP-HWH,NGP,HWH,Mast adjustment,4,4,13,2.9,Power block,2026-09-15,Quarterly,5,7
+T0126,TMS,S&T,PNT-HWH-MAS-725,Signal,HWH-MAS,HWH,MAS,Point machine service,9,10,0,1.7,Traffic block,2026-10-28,Annual,1,6
+T0127,CMS,S&T,AXL-HWH-MAS-640,Signal,HWH-MAS,HWH,MAS,Axle counter reset,6,4,13,2.8,Traffic block,2026-09-15,Bi-Annual,0,9
+T0128,CMS,S&T,AXL-LKO-NDLS-966,Signal,LKO-NDLS,LKO,NDLS,Signal inspection,7,3,0,3.3,Traffic block,2026-10-06,Annual,4,5
+T0129,CMS,Engineering,TRA-NGP-HWH-127,Track,NGP-HWH,NGP,HWH,Deep screening,6,3,0,2.1,Traffic block,2026-10-10,Monthly,2,5
+T0130,TMS,S&T,SIG-BCT-NGP-240,Signal,BCT-NGP,BCT,NGP,Relay check,3,5,8,3.1,Traffic block,2026-09-20,Annual,3,8
+T0131,TMS,Engineering,TRK-BCT-NGP-955,Track,BCT-NGP,BCT,NGP,Weld repair,4,7,10,2.6,Traffic block,2026-09-18,Bi-Annual,1,6
+T0132,TMS,Engineering,PTS-NGP-HWH-912,Track,NGP-HWH,NGP,HWH,Deep screening,7,6,0,3.5,Traffic block,2026-10-13,Conditional,4,4
+T0133,SMMS,TRD,TSS-NGP-HWH-101,OHE,NGP-HWH,NGP,HWH,Wire tensioning,9,8,0,1.6,Power block,2026-10-19,Monthly,4,6
+T0134,TMS,TRD,SP-LKO-NDLS-667,OHE,LKO-NDLS,LKO,NDLS,Mast adjustment,3,6,1,2.9,Power block,2026-09-27,Bi-Annual,5,4
+T0135,TDMS,Engineering,PTS-HWH-MAS-772,Track,HWH-MAS,HWH,MAS,Tamping,8,3,0,3.2,Traffic block,2026-10-08,Quarterly,0,6
+T0136,TDMS,TRD,SP-NGP-HWH-590,OHE,NGP-HWH,NGP,HWH,Pantograph check,8,4,2,3.1,Power block,2026-09-26,Annual,0,6
+T0137,SMMS,Engineering,TRA-NGP-HWH-417,Track,NGP-HWH,NGP,HWH,Rail fracture,10,10,0,3.3,Traffic block,2026-10-04,Bi-Annual,2,4
+T0138,TDMS,S&T,PNT-BCT-NGP-509,Signal,BCT-NGP,BCT,NGP,Relay check,8,6,7,2.0,Traffic block,2026-09-21,Annual,5,7
+T0139,TDMS,TRD,SP-HWH-MAS-534,OHE,HWH-MAS,HWH,MAS,OHE maintenance,3,6,0,3.5,Power block,2026-10-15,Bi-Annual,2,4
+T0140,TMS,S&T,PNT-HWH-MAS-717,Signal,HWH-MAS,HWH,MAS,Relay check,8,6,0,2.3,Traffic block,2026-10-12,Monthly,5,6
+T0141,CMS,S&T,AXL-BCT-NGP-752,Signal,BCT-NGP,BCT,NGP,Signal inspection,6,5,0,3.2,Traffic block,2026-10-03,Monthly,1,8
+T0142,CMS,Engineering,TRK-NGP-HWH-897,Track,NGP-HWH,NGP,HWH,Rail fracture,9,9,0,2.7,Traffic block,2026-10-17,Quarterly,5,7
+T0143,TDMS,S&T,AXL-MAS-LKO-240,Signal,MAS-LKO,MAS,LKO,Signal inspection,7,5,0,2.9,Traffic block,2026-10-05,Monthly,0,9
+T0144,SMMS,S&T,AXL-LKO-NDLS-220,Signal,LKO-NDLS,LKO,NDLS,Axle counter reset,5,5,0,1.6,Traffic block,2026-10-17,Bi-Annual,5,7
+T0145,SMMS,Engineering,TRA-NGP-HWH-276,Track,NGP-HWH,NGP,HWH,Rail fracture,10,7,14,4.0,Traffic block,2026-09-14,Bi-Annual,5,4
+T0146,TDMS,S&T,PNT-NGP-HWH-620,Signal,NGP-HWH,NGP,HWH,Point machine service,8,7,13,1.4,Traffic block,2026-09-15,Annual,0,6
+T0147,TDMS,S&T,AXL-LKO-NDLS-188,Signal,LKO-NDLS,LKO,NDLS,Point machine service,7,9,0,3.2,Traffic block,2026-10-13,Conditional,3,7
+T0148,TMS,Engineering,TRK-HWH-MAS-560,Track,HWH-MAS,HWH,MAS,USFD testing,6,8,0,1.4,Traffic block,2026-10-24,Conditional,5,8
+T0149,SMMS,Engineering,TRK-MAS-LKO-951,Track,MAS-LKO,MAS,LKO,Ultrasonic inspection,3,7,0,1.5,Traffic block,2026-10-08,Quarterly,2,8
+T0150,TDMS,Engineering,PTS-HWH-MAS-664,Track,HWH-MAS,HWH,MAS,Tamping,5,4,0,2.8,Traffic block,2026-09-30,Conditional,5,5
+T0151,SMMS,Engineering,PTS-LKO-NDLS-445,Track,LKO-NDLS,LKO,NDLS,USFD testing,7,3,1,1.2,Traffic block,2026-09-27,Conditional,2,9
+T0152,SMMS,TRD,SP-MAS-LKO-131,OHE,MAS-LKO,MAS,LKO,Mast adjustment,6,8,0,2.9,Power block,2026-10-07,Annual,1,9
+T0153,CMS,S&T,AXL-MAS-LKO-161,Signal,MAS-LKO,MAS,LKO,Signal inspection,4,6,0,2.4,Traffic block,2026-10-08,Conditional,1,6
+T0154,TDMS,TRD,OHE-HWH-MAS-878,OHE,HWH-MAS,HWH,MAS,Pantograph check,5,7,0,2.0,Power block,2026-10-12,Monthly,2,7
+T0155,SMMS,Engineering,TRA-BCT-NGP-493,Track,BCT-NGP,BCT,NGP,Rail fracture,10,8,15,1.5,Traffic block,2026-09-13,Conditional,5,6
+T0156,SMMS,Engineering,TRA-MAS-LKO-610,Track,MAS-LKO,MAS,LKO,Ultrasonic inspection,5,6,0,3.8,Traffic block,2026-10-14,Annual,1,5
+T0157,TDMS,Engineering,TRA-BCT-NGP-711,Track,BCT-NGP,BCT,NGP,Weld repair,8,8,0,2.6,Traffic block,2026-10-25,Monthly,3,5
+T0158,TDMS,TRD,TSS-HWH-MAS-146,OHE,HWH-MAS,HWH,MAS,Pantograph check,6,3,0,1.6,Power block,2026-10-15,Bi-Annual,0,7
+T0159,CMS,TRD,SP-HWH-MAS-725,OHE,HWH-MAS,HWH,MAS,Mast adjustment,3,4,7,2.1,Power block,2026-09-21,Conditional,2,5
+T0160,SMMS,TRD,SP-LKO-NDLS-141,OHE,LKO-NDLS,LKO,NDLS,Pantograph check,3,3,0,2.0,Power block,2026-10-13,Conditional,3,5
+T0161,SMMS,S&T,SIG-LKO-NDLS-502,Signal,LKO-NDLS,LKO,NDLS,Relay check,7,8,10,2.0,Traffic block,2026-09-18,Conditional,4,7
+T0162,TDMS,S&T,PNT-BCT-NGP-789,Signal,BCT-NGP,BCT,NGP,Relay check,3,6,0,3.4,Traffic block,2026-10-21,Monthly,4,7
+T0163,TDMS,TRD,OHE-LKO-NDLS-838,OHE,LKO-NDLS,LKO,NDLS,Mast adjustment,3,7,0,2.6,Power block,2026-10-21,Conditional,3,5
+T0164,SMMS,Engineering,TRK-LKO-NDLS-295,Track,LKO-NDLS,LKO,NDLS,USFD testing,3,6,0,1.5,Traffic block,2026-10-20,Quarterly,3,8
+T0165,CMS,TRD,SP-BCT-NGP-312,OHE,BCT-NGP,BCT,NGP,Insulator replacement,7,5,8,2.6,Power block,2026-09-20,Quarterly,3,8
+T0166,TDMS,TRD,SP-HWH-MAS-595,OHE,HWH-MAS,HWH,MAS,Wire tensioning,8,8,0,1.9,Power block,2026-10-28,Bi-Annual,2,9
+T0167,SMMS,TRD,TSS-MAS-LKO-457,OHE,MAS-LKO,MAS,LKO,Wire tensioning,9,9,0,3.0,Power block,2026-10-10,Annual,2,5
+T0168,TDMS,Engineering,TRK-HWH-MAS-454,Track,HWH-MAS,HWH,MAS,USFD testing,6,8,0,2.4,Traffic block,2026-10-04,Conditional,2,8
+T0169,TDMS,Engineering,PTS-BCT-NGP-700,Track,BCT-NGP,BCT,NGP,Ultrasonic inspection,4,4,0,3.7,Traffic block,2026-10-05,Quarterly,0,4
+T0170,CMS,S&T,AXL-MAS-LKO-889,Signal,MAS-LKO,MAS,LKO,Signal inspection,4,3,15,1.5,Traffic block,2026-09-13,Annual,3,9
+T0171,SMMS,S&T,AXL-HWH-MAS-160,Signal,HWH-MAS,HWH,MAS,Relay check,3,8,0,2.6,Traffic block,2026-10-21,Monthly,1,7
+T0172,SMMS,Engineering,TRK-MAS-LKO-866,Track,MAS-LKO,MAS,LKO,Deep screening,5,3,0,2.7,Traffic block,2026-10-01,Bi-Annual,2,7
+T0173,CMS,Engineering,TRA-LKO-NDLS-297,Track,LKO-NDLS,LKO,NDLS,Deep screening,3,5,0,2.4,Traffic block,2026-10-06,Quarterly,0,9
+T0174,TDMS,S&T,SIG-LKO-NDLS-725,Signal,LKO-NDLS,LKO,NDLS,Point machine service,10,10,0,1.3,Traffic block,2026-10-19,Monthly,1,5
+T0175,CMS,S&T,PNT-NGP-HWH-492,Signal,NGP-HWH,NGP,HWH,Signal inspection,4,6,0,3.9,Traffic block,2026-10-07,Conditional,5,8
+T0176,TMS,S&T,SIG-HWH-MAS-783,Signal,HWH-MAS,HWH,MAS,Point machine service,7,10,0,2.2,Traffic block,2026-10-14,Bi-Annual,5,4
+T0177,TDMS,S&T,SIG-LKO-NDLS-236,Signal,LKO-NDLS,LKO,NDLS,Point machine service,10,8,0,4.0,Traffic block,2026-10-09,Annual,5,8
+T0178,CMS,TRD,SP-NGP-HWH-872,OHE,NGP-HWH,NGP,HWH,Insulator replacement,7,3,0,2.6,Power block,2026-10-09,Monthly,4,4
+T0179,TMS,TRD,SP-LKO-NDLS-649,OHE,LKO-NDLS,LKO,NDLS,Insulator replacement,4,4,0,2.6,Power block,2026-10-01,Quarterly,5,8
+T0180,CMS,Engineering,TRK-LKO-NDLS-564,Track,LKO-NDLS,LKO,NDLS,Deep screening,4,7,0,2.7,Traffic block,2026-10-15,Annual,5,6
+T0181,TMS,S&T,AXL-HWH-MAS-323,Signal,HWH-MAS,HWH,MAS,Signal inspection,7,3,0,2.0,Traffic block,2026-09-30,Conditional,0,4
+T0182,CMS,Engineering,TRK-HWH-MAS-887,Track,HWH-MAS,HWH,MAS,Deep screening,4,8,11,3.9,Traffic block,2026-09-17,Annual,3,7
+T0183,CMS,Engineering,PTS-LKO-NDLS-980,Track,LKO-NDLS,LKO,NDLS,Tamping,5,3,0,2.6,Traffic block,2026-10-14,Quarterly,5,5
+T0184,TMS,Engineering,PTS-HWH-MAS-836,Track,HWH-MAS,HWH,MAS,Deep screening,7,6,0,3.5,Traffic block,2026-10-05,Annual,2,5
+T0185,TDMS,Engineering,PTS-BCT-NGP-529,Track,BCT-NGP,BCT,NGP,Rail fracture,7,8,0,1.3,Traffic block,2026-09-29,Annual,4,9
+T0186,TMS,Engineering,TRA-BCT-NGP-339,Track,BCT-NGP,BCT,NGP,Deep screening,7,4,0,3.3,Traffic block,2026-10-02,Conditional,2,5
+T0187,TDMS,TRD,OHE-LKO-NDLS-409,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,8,8,0,1.8,Power block,2026-10-15,Conditional,5,5
+T0188,CMS,TRD,TSS-MAS-LKO-758,OHE,MAS-LKO,MAS,LKO,OHE maintenance,8,6,0,2.0,Power block,2026-10-11,Annual,1,6
+T0189,CMS,Engineering,TRK-LKO-NDLS-969,Track,LKO-NDLS,LKO,NDLS,Deep screening,4,5,3,3.4,Traffic block,2026-09-25,Monthly,4,7
+T0190,CMS,TRD,TSS-LKO-NDLS-348,OHE,LKO-NDLS,LKO,NDLS,Insulator replacement,5,4,0,1.2,Power block,2026-10-12,Bi-Annual,0,8
+T0191,SMMS,Engineering,PTS-HWH-MAS-719,Track,HWH-MAS,HWH,MAS,Deep screening,7,3,4,3.4,Traffic block,2026-09-24,Conditional,1,7
+T0192,SMMS,S&T,SIG-HWH-MAS-294,Signal,HWH-MAS,HWH,MAS,Signal inspection,8,3,0,3.3,Traffic block,2026-10-27,Quarterly,5,8
+T0193,SMMS,S&T,PNT-NGP-HWH-894,Signal,NGP-HWH,NGP,HWH,Cable insulation test,5,6,0,2.9,Traffic block,2026-10-07,Bi-Annual,2,8
+T0194,CMS,S&T,PNT-BCT-NGP-308,Signal,BCT-NGP,BCT,NGP,Axle counter reset,5,5,0,2.7,Traffic block,2026-10-05,Quarterly,0,6
+T0195,CMS,S&T,PNT-NGP-HWH-335,Signal,NGP-HWH,NGP,HWH,Point machine service,10,8,0,3.0,Traffic block,2026-10-19,Bi-Annual,2,7
+T0196,CMS,S&T,SIG-NGP-HWH-243,Signal,NGP-HWH,NGP,HWH,Relay check,8,7,0,3.8,Traffic block,2026-10-15,Monthly,4,4
+T0197,TMS,TRD,TSS-BCT-NGP-240,OHE,BCT-NGP,BCT,NGP,OHE maintenance,8,4,0,1.5,Power block,2026-10-04,Conditional,3,6
+T0198,TMS,TRD,SP-LKO-NDLS-599,OHE,LKO-NDLS,LKO,NDLS,Pantograph check,3,3,0,2.2,Power block,2026-09-28,Conditional,5,6
+T0199,TDMS,Engineering,PTS-LKO-NDLS-540,Track,LKO-NDLS,LKO,NDLS,USFD testing,4,3,9,1.4,Traffic block,2026-09-19,Conditional,4,6
+T0200,TDMS,S&T,PNT-MAS-LKO-515,Signal,MAS-LKO,MAS,LKO,Signal inspection,6,7,0,3.1,Traffic block,2026-10-07,Monthly,5,9
+T0201,TMS,Engineering,TRA-MAS-LKO-665,Track,MAS-LKO,MAS,LKO,Deep screening,6,3,0,3.1,Traffic block,2026-09-30,Annual,3,9
+T0202,TDMS,TRD,OHE-BCT-NGP-335,OHE,BCT-NGP,BCT,NGP,Mast adjustment,4,8,8,1.8,Power block,2026-09-20,Monthly,5,6
+T0203,TMS,Engineering,TRK-HWH-MAS-701,Track,HWH-MAS,HWH,MAS,Rail fracture,8,10,5,1.5,Traffic block,2026-09-23,Conditional,3,9
+T0204,TDMS,S&T,AXL-NGP-HWH-863,Signal,NGP-HWH,NGP,HWH,Signal inspection,5,3,0,1.7,Traffic block,2026-09-30,Bi-Annual,4,8
+T0205,CMS,S&T,PNT-BCT-NGP-602,Signal,BCT-NGP,BCT,NGP,Relay check,4,5,0,2.1,Traffic block,2026-10-03,Conditional,5,7
+T0206,TMS,TRD,SP-HWH-MAS-175,OHE,HWH-MAS,HWH,MAS,Insulator replacement,3,5,0,3.1,Power block,2026-10-18,Quarterly,5,7
+T0207,TDMS,S&T,SIG-BCT-NGP-415,Signal,BCT-NGP,BCT,NGP,Signal inspection,6,5,0,1.3,Traffic block,2026-09-30,Quarterly,3,7
+T0208,CMS,Engineering,TRA-BCT-NGP-667,Track,BCT-NGP,BCT,NGP,Rail fracture,7,9,1,1.9,Traffic block,2026-09-27,Monthly,5,8
+T0209,SMMS,TRD,SP-LKO-NDLS-489,OHE,LKO-NDLS,LKO,NDLS,Insulator replacement,4,4,0,1.8,Power block,2026-10-02,Monthly,1,7
+T0210,TDMS,S&T,SIG-HWH-MAS-469,Signal,HWH-MAS,HWH,MAS,Axle counter reset,5,4,0,2.5,Traffic block,2026-10-17,Quarterly,3,4
+T0211,SMMS,S&T,PNT-BCT-NGP-961,Signal,BCT-NGP,BCT,NGP,Axle counter reset,7,6,6,2.3,Traffic block,2026-09-22,Conditional,1,6
+T0212,TDMS,TRD,TSS-NGP-HWH-281,OHE,NGP-HWH,NGP,HWH,Pantograph check,6,5,0,3.1,Power block,2026-10-13,Conditional,1,6
+T0213,CMS,S&T,SIG-MAS-LKO-677,Signal,MAS-LKO,MAS,LKO,Relay check,4,7,3,3.0,Traffic block,2026-09-25,Monthly,5,7
+T0214,SMMS,S&T,PNT-HWH-MAS-789,Signal,HWH-MAS,HWH,MAS,Signal inspection,6,4,0,1.7,Traffic block,2026-10-19,Quarterly,5,7
+T0215,CMS,Engineering,TRA-MAS-LKO-696,Track,MAS-LKO,MAS,LKO,Ultrasonic inspection,6,7,0,3.8,Traffic block,2026-10-20,Annual,4,4
+T0216,TDMS,TRD,SP-LKO-NDLS-187,OHE,LKO-NDLS,LKO,NDLS,Mast adjustment,3,4,0,2.1,Power block,2026-10-18,Conditional,0,8
+T0217,CMS,S&T,SIG-MAS-LKO-200,Signal,MAS-LKO,MAS,LKO,Signal inspection,5,4,0,2.6,Traffic block,2026-10-16,Conditional,1,7
+T0218,TDMS,S&T,AXL-MAS-LKO-612,Signal,MAS-LKO,MAS,LKO,Cable insulation test,4,5,8,1.3,Traffic block,2026-09-20,Monthly,0,9
+T0219,SMMS,S&T,PNT-HWH-MAS-903,Signal,HWH-MAS,HWH,MAS,Relay check,4,7,0,2.4,Traffic block,2026-10-12,Annual,2,4
+T0220,TDMS,Engineering,TRA-BCT-NGP-763,Track,BCT-NGP,BCT,NGP,Rail fracture,7,8,12,1.7,Traffic block,2026-09-16,Conditional,1,6
+T0221,CMS,S&T,AXL-NGP-HWH-288,Signal,NGP-HWH,NGP,HWH,Axle counter reset,4,8,0,2.2,Traffic block,2026-10-21,Conditional,1,7
+T0222,CMS,S&T,SIG-BCT-NGP-385,Signal,BCT-NGP,BCT,NGP,Point machine service,7,7,0,2.6,Traffic block,2026-10-09,Bi-Annual,1,7
+T0223,TMS,S&T,AXL-MAS-LKO-420,Signal,MAS-LKO,MAS,LKO,Cable insulation test,7,6,0,2.8,Traffic block,2026-10-09,Bi-Annual,3,8
+T0224,SMMS,TRD,SP-HWH-MAS-186,OHE,HWH-MAS,HWH,MAS,Mast adjustment,8,4,0,1.7,Power block,2026-10-01,Quarterly,2,9
+T0225,SMMS,TRD,SP-MAS-LKO-241,OHE,MAS-LKO,MAS,LKO,Pantograph check,7,6,0,2.5,Power block,2026-10-15,Quarterly,4,5
+T0226,CMS,S&T,PNT-NGP-HWH-962,Signal,NGP-HWH,NGP,HWH,Point machine service,10,7,1,2.5,Traffic block,2026-09-27,Annual,4,8
+T0227,CMS,S&T,AXL-MAS-LKO-960,Signal,MAS-LKO,MAS,LKO,Axle counter reset,6,6,0,2.7,Traffic block,2026-10-23,Quarterly,2,4
+T0228,TDMS,Engineering,TRK-LKO-NDLS-899,Track,LKO-NDLS,LKO,NDLS,Weld repair,6,7,0,3.3,Traffic block,2026-10-15,Conditional,0,8
+T0229,TMS,S&T,AXL-LKO-NDLS-942,Signal,LKO-NDLS,LKO,NDLS,Relay check,3,8,0,1.7,Traffic block,2026-10-11,Monthly,5,9
+T0230,SMMS,S&T,PNT-BCT-NGP-456,Signal,BCT-NGP,BCT,NGP,Axle counter reset,3,6,2,3.3,Traffic block,2026-09-26,Quarterly,5,8
+T0231,TDMS,TRD,OHE-LKO-NDLS-730,OHE,LKO-NDLS,LKO,NDLS,Pantograph check,4,4,13,1.2,Power block,2026-09-15,Conditional,2,8
+T0232,SMMS,S&T,AXL-HWH-MAS-373,Signal,HWH-MAS,HWH,MAS,Relay check,7,8,3,3.9,Traffic block,2026-09-25,Annual,0,6
+T0233,SMMS,TRD,OHE-NGP-HWH-828,OHE,NGP-HWH,NGP,HWH,Insulator replacement,5,4,0,3.0,Power block,2026-10-13,Quarterly,4,9
+T0234,TDMS,TRD,TSS-MAS-LKO-177,OHE,MAS-LKO,MAS,LKO,Pantograph check,8,3,0,3.2,Power block,2026-10-20,Bi-Annual,3,7
+T0235,TDMS,TRD,SP-BCT-NGP-569,OHE,BCT-NGP,BCT,NGP,OHE maintenance,8,8,0,3.6,Power block,2026-10-23,Conditional,3,5
+T0236,CMS,Engineering,TRA-MAS-LKO-948,Track,MAS-LKO,MAS,LKO,Weld repair,5,5,0,1.4,Traffic block,2026-10-25,Annual,2,9
+T0237,TMS,Engineering,TRA-BCT-NGP-116,Track,BCT-NGP,BCT,NGP,USFD testing,3,4,0,1.0,Traffic block,2026-10-28,Annual,1,9
+T0238,SMMS,TRD,TSS-HWH-MAS-195,OHE,HWH-MAS,HWH,MAS,Insulator replacement,8,5,0,2.1,Power block,2026-10-26,Quarterly,0,7
+T0239,TDMS,TRD,SP-NGP-HWH-193,OHE,NGP-HWH,NGP,HWH,Pantograph check,8,3,0,2.4,Power block,2026-10-02,Conditional,1,8
+T0240,CMS,Engineering,TRA-BCT-NGP-936,Track,BCT-NGP,BCT,NGP,USFD testing,3,6,0,2.4,Traffic block,2026-10-05,Annual,0,9
+T0241,TMS,Engineering,TRA-HWH-MAS-240,Track,HWH-MAS,HWH,MAS,Weld repair,6,4,0,3.0,Traffic block,2026-09-30,Conditional,4,4
+T0242,SMMS,S&T,AXL-HWH-MAS-866,Signal,HWH-MAS,HWH,MAS,Point machine service,8,10,0,2.3,Traffic block,2026-10-04,Monthly,0,5
+T0243,TMS,TRD,TSS-MAS-LKO-422,OHE,MAS-LKO,MAS,LKO,Wire tensioning,8,8,0,1.3,Power block,2026-10-15,Conditional,4,9
+T0244,TDMS,TRD,OHE-BCT-NGP-630,OHE,BCT-NGP,BCT,NGP,Wire tensioning,8,10,0,1.2,Power block,2026-10-26,Quarterly,3,7
+T0245,TMS,Engineering,PTS-MAS-LKO-172,Track,MAS-LKO,MAS,LKO,USFD testing,7,3,15,1.9,Traffic block,2026-09-13,Conditional,3,6
+T0246,SMMS,S&T,AXL-BCT-NGP-169,Signal,BCT-NGP,BCT,NGP,Signal inspection,3,5,0,3.8,Traffic block,2026-10-28,Annual,4,6
+T0247,CMS,S&T,AXL-MAS-LKO-649,Signal,MAS-LKO,MAS,LKO,Signal inspection,7,7,0,1.3,Traffic block,2026-09-30,Conditional,1,5
+T0248,TDMS,S&T,PNT-LKO-NDLS-815,Signal,LKO-NDLS,LKO,NDLS,Signal inspection,6,8,4,1.2,Traffic block,2026-09-24,Annual,0,7
+T0249,TMS,S&T,SIG-NGP-HWH-824,Signal,NGP-HWH,NGP,HWH,Signal inspection,4,8,0,2.5,Traffic block,2026-10-09,Conditional,4,9
+T0250,TDMS,Engineering,PTS-HWH-MAS-899,Track,HWH-MAS,HWH,MAS,Tamping,5,8,13,3.7,Traffic block,2026-09-15,Annual,2,8
+T0251,TMS,S&T,PNT-LKO-NDLS-566,Signal,LKO-NDLS,LKO,NDLS,Signal inspection,7,5,0,3.6,Traffic block,2026-10-03,Bi-Annual,1,6
+T0252,TMS,TRD,SP-BCT-NGP-621,OHE,BCT-NGP,BCT,NGP,Insulator replacement,3,3,1,1.7,Power block,2026-09-27,Bi-Annual,3,5
+T0253,SMMS,Engineering,PTS-LKO-NDLS-771,Track,LKO-NDLS,LKO,NDLS,USFD testing,6,4,0,2.2,Traffic block,2026-10-21,Bi-Annual,2,4
+T0254,TDMS,Engineering,TRK-LKO-NDLS-283,Track,LKO-NDLS,LKO,NDLS,USFD testing,4,7,7,1.2,Traffic block,2026-09-21,Bi-Annual,2,6
+T0255,TMS,TRD,TSS-MAS-LKO-305,OHE,MAS-LKO,MAS,LKO,OHE maintenance,5,7,0,3.2,Power block,2026-10-05,Annual,2,8
+T0256,CMS,Engineering,TRK-LKO-NDLS-106,Track,LKO-NDLS,LKO,NDLS,Tamping,6,3,0,2.0,Traffic block,2026-10-24,Monthly,2,4
+T0257,CMS,TRD,OHE-HWH-MAS-642,OHE,HWH-MAS,HWH,MAS,OHE maintenance,4,6,0,1.2,Power block,2026-10-02,Bi-Annual,0,4
+T0258,SMMS,TRD,TSS-MAS-LKO-865,OHE,MAS-LKO,MAS,LKO,Wire tensioning,7,7,0,2.9,Power block,2026-10-10,Monthly,4,8
+T0259,TMS,S&T,PNT-NGP-HWH-367,Signal,NGP-HWH,NGP,HWH,Point machine service,9,10,0,3.2,Traffic block,2026-10-08,Annual,2,5
+T0260,TMS,Engineering,TRK-NGP-HWH-259,Track,NGP-HWH,NGP,HWH,Ultrasonic inspection,3,4,0,1.9,Traffic block,2026-10-01,Conditional,2,5
+T0261,CMS,S&T,SIG-MAS-LKO-192,Signal,MAS-LKO,MAS,LKO,Relay check,4,8,0,3.1,Traffic block,2026-10-17,Monthly,1,6
+T0262,SMMS,Engineering,TRA-NGP-HWH-625,Track,NGP-HWH,NGP,HWH,Weld repair,3,8,0,3.5,Traffic block,2026-10-03,Monthly,3,7
+T0263,SMMS,Engineering,TRK-MAS-LKO-224,Track,MAS-LKO,MAS,LKO,Rail fracture,7,7,4,1.4,Traffic block,2026-09-24,Annual,2,9
+T0264,TMS,TRD,OHE-LKO-NDLS-122,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,7,8,8,3.4,Power block,2026-09-20,Bi-Annual,0,4
+T0265,CMS,Engineering,TRA-NGP-HWH-941,Track,NGP-HWH,NGP,HWH,Ultrasonic inspection,8,6,0,2.1,Traffic block,2026-10-11,Quarterly,2,5
+T0266,SMMS,S&T,SIG-HWH-MAS-135,Signal,HWH-MAS,HWH,MAS,Axle counter reset,7,7,0,2.9,Traffic block,2026-10-13,Annual,4,7
+T0267,TMS,Engineering,TRK-HWH-MAS-529,Track,HWH-MAS,HWH,MAS,Deep screening,4,8,9,1.7,Traffic block,2026-09-19,Conditional,0,7
+T0268,TDMS,S&T,PNT-LKO-NDLS-679,Signal,LKO-NDLS,LKO,NDLS,Axle counter reset,7,5,0,1.5,Traffic block,2026-10-08,Conditional,1,4
+T0269,TDMS,Engineering,TRA-MAS-LKO-885,Track,MAS-LKO,MAS,LKO,Ultrasonic inspection,7,4,2,1.7,Traffic block,2026-09-26,Bi-Annual,4,9
+T0270,TMS,Engineering,TRA-LKO-NDLS-959,Track,LKO-NDLS,LKO,NDLS,Deep screening,4,4,0,2.0,Traffic block,2026-10-21,Bi-Annual,4,4
+T0271,TDMS,TRD,SP-LKO-NDLS-292,OHE,LKO-NDLS,LKO,NDLS,Insulator replacement,6,7,0,2.5,Power block,2026-09-30,Monthly,1,8
+T0272,SMMS,Engineering,TRK-LKO-NDLS-439,Track,LKO-NDLS,LKO,NDLS,Deep screening,7,4,6,3.2,Traffic block,2026-09-22,Bi-Annual,0,4
+T0273,SMMS,TRD,SP-NGP-HWH-981,OHE,NGP-HWH,NGP,HWH,OHE maintenance,5,3,0,3.8,Power block,2026-10-10,Conditional,0,6
+T0274,TDMS,S&T,AXL-NGP-HWH-547,Signal,NGP-HWH,NGP,HWH,Point machine service,10,9,0,3.9,Traffic block,2026-10-20,Conditional,2,5
+T0275,SMMS,S&T,SIG-HWH-MAS-281,Signal,HWH-MAS,HWH,MAS,Relay check,8,3,10,2.2,Traffic block,2026-09-18,Conditional,0,5
+T0276,TDMS,TRD,OHE-NGP-HWH-608,OHE,NGP-HWH,NGP,HWH,Mast adjustment,4,5,0,1.7,Power block,2026-10-08,Quarterly,5,4
+T0277,TDMS,S&T,SIG-BCT-NGP-355,Signal,BCT-NGP,BCT,NGP,Relay check,8,3,0,3.4,Traffic block,2026-10-21,Monthly,0,7
+T0278,CMS,TRD,TSS-MAS-LKO-604,OHE,MAS-LKO,MAS,LKO,Insulator replacement,6,5,0,1.3,Power block,2026-10-13,Conditional,5,9
+T0279,SMMS,Engineering,TRK-MAS-LKO-401,Track,MAS-LKO,MAS,LKO,Rail fracture,7,9,0,1.3,Traffic block,2026-10-08,Quarterly,3,5
+T0280,TMS,TRD,SP-BCT-NGP-728,OHE,BCT-NGP,BCT,NGP,Wire tensioning,10,7,0,3.0,Power block,2026-10-17,Annual,1,4
+T0281,TMS,S&T,PNT-NGP-HWH-813,Signal,NGP-HWH,NGP,HWH,Point machine service,9,9,0,1.3,Traffic block,2026-10-10,Conditional,4,7
+T0282,SMMS,Engineering,TRA-HWH-MAS-189,Track,HWH-MAS,HWH,MAS,Rail fracture,9,10,0,1.1,Traffic block,2026-10-03,Bi-Annual,0,7
+T0283,TMS,S&T,PNT-MAS-LKO-776,Signal,MAS-LKO,MAS,LKO,Axle counter reset,5,3,0,2.2,Traffic block,2026-10-09,Annual,2,5
+T0284,CMS,Engineering,TRA-HWH-MAS-369,Track,HWH-MAS,HWH,MAS,Deep screening,4,5,0,1.5,Traffic block,2026-10-20,Monthly,0,9
+T0285,TDMS,TRD,OHE-MAS-LKO-666,OHE,MAS-LKO,MAS,LKO,Mast adjustment,3,6,7,3.9,Power block,2026-09-21,Annual,4,5
+T0286,CMS,S&T,AXL-BCT-NGP-135,Signal,BCT-NGP,BCT,NGP,Axle counter reset,7,7,13,2.7,Traffic block,2026-09-15,Quarterly,0,7
+T0287,SMMS,Engineering,TRK-NGP-HWH-143,Track,NGP-HWH,NGP,HWH,Tamping,6,3,7,1.6,Traffic block,2026-09-21,Quarterly,4,6
+T0288,TDMS,TRD,TSS-BCT-NGP-669,OHE,BCT-NGP,BCT,NGP,OHE maintenance,6,7,0,1.8,Power block,2026-10-12,Monthly,5,8
+T0289,CMS,Engineering,TRK-MAS-LKO-680,Track,MAS-LKO,MAS,LKO,Tamping,7,7,0,3.8,Traffic block,2026-10-27,Monthly,4,4
+T0290,TDMS,TRD,TSS-HWH-MAS-492,OHE,HWH-MAS,HWH,MAS,Pantograph check,8,6,0,2.4,Power block,2026-10-03,Bi-Annual,3,5
+T0291,CMS,Engineering,PTS-MAS-LKO-343,Track,MAS-LKO,MAS,LKO,Weld repair,3,8,0,1.8,Traffic block,2026-10-09,Monthly,2,6
+T0292,TDMS,S&T,SIG-MAS-LKO-237,Signal,MAS-LKO,MAS,LKO,Signal inspection,5,8,0,3.5,Traffic block,2026-10-06,Annual,4,9
+T0293,TMS,Engineering,TRA-MAS-LKO-858,Track,MAS-LKO,MAS,LKO,Tamping,6,7,14,1.2,Traffic block,2026-09-14,Quarterly,0,6
+T0294,CMS,Engineering,TRK-LKO-NDLS-277,Track,LKO-NDLS,LKO,NDLS,Ultrasonic inspection,4,4,4,1.1,Traffic block,2026-09-24,Bi-Annual,5,5
+T0295,TDMS,S&T,PNT-MAS-LKO-750,Signal,MAS-LKO,MAS,LKO,Cable insulation test,3,8,0,2.1,Traffic block,2026-10-17,Annual,1,7
+T0296,TDMS,S&T,AXL-NGP-HWH-950,Signal,NGP-HWH,NGP,HWH,Relay check,8,3,0,2.2,Traffic block,2026-10-03,Conditional,1,5
+T0297,SMMS,TRD,SP-NGP-HWH-519,OHE,NGP-HWH,NGP,HWH,Wire tensioning,7,7,0,1.4,Power block,2026-10-03,Conditional,0,5
+T0298,TDMS,TRD,TSS-HWH-MAS-485,OHE,HWH-MAS,HWH,MAS,Wire tensioning,9,10,0,2.4,Power block,2026-10-19,Conditional,4,7
+T0299,TMS,Engineering,TRA-LKO-NDLS-674,Track,LKO-NDLS,LKO,NDLS,USFD testing,8,7,0,1.9,Traffic block,2026-10-01,Annual,0,6
+T0300,TDMS,TRD,TSS-HWH-MAS-771,OHE,HWH-MAS,HWH,MAS,Wire tensioning,9,8,0,3.3,Power block,2026-10-26,Monthly,4,7
+T0301,TDMS,TRD,SP-NGP-HWH-609,OHE,NGP-HWH,NGP,HWH,OHE maintenance,5,5,7,2.2,Power block,2026-09-21,Conditional,5,8
+T0302,SMMS,S&T,AXL-NGP-HWH-903,Signal,NGP-HWH,NGP,HWH,Cable insulation test,6,8,0,1.9,Traffic block,2026-10-03,Conditional,1,6
+T0303,TMS,S&T,AXL-NGP-HWH-927,Signal,NGP-HWH,NGP,HWH,Relay check,7,4,15,2.0,Traffic block,2026-09-13,Quarterly,2,5
+T0304,TDMS,S&T,PNT-HWH-MAS-699,Signal,HWH-MAS,HWH,MAS,Relay check,5,6,8,1.2,Traffic block,2026-09-20,Conditional,4,8
+T0305,TMS,S&T,SIG-NGP-HWH-988,Signal,NGP-HWH,NGP,HWH,Cable insulation test,8,6,0,2.2,Traffic block,2026-10-25,Quarterly,1,5
+T0306,TDMS,S&T,SIG-LKO-NDLS-423,Signal,LKO-NDLS,LKO,NDLS,Axle counter reset,8,4,0,2.5,Traffic block,2026-10-18,Quarterly,2,9
+T0307,TMS,Engineering,TRK-MAS-LKO-879,Track,MAS-LKO,MAS,LKO,Weld repair,4,7,0,2.5,Traffic block,2026-10-22,Monthly,1,8
+T0308,CMS,TRD,TSS-MAS-LKO-588,OHE,MAS-LKO,MAS,LKO,Pantograph check,6,3,0,1.6,Power block,2026-10-09,Monthly,2,8
+T0309,SMMS,Engineering,PTS-BCT-NGP-354,Track,BCT-NGP,BCT,NGP,USFD testing,4,8,5,1.4,Traffic block,2026-09-23,Conditional,4,6
+T0310,SMMS,Engineering,TRA-BCT-NGP-566,Track,BCT-NGP,BCT,NGP,Weld repair,8,7,0,2.0,Traffic block,2026-10-26,Quarterly,2,7
+T0311,TDMS,Engineering,TRK-NGP-HWH-333,Track,NGP-HWH,NGP,HWH,Deep screening,4,8,4,3.2,Traffic block,2026-09-24,Conditional,1,4
+T0312,TDMS,TRD,SP-BCT-NGP-361,OHE,BCT-NGP,BCT,NGP,Pantograph check,7,7,0,4.0,Power block,2026-10-19,Monthly,5,4
+T0313,TMS,TRD,TSS-BCT-NGP-489,OHE,BCT-NGP,BCT,NGP,Pantograph check,3,7,0,3.1,Power block,2026-10-04,Monthly,2,7
+T0314,TMS,TRD,SP-LKO-NDLS-720,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,8,10,2,2.5,Power block,2026-09-26,Monthly,2,4
+T0315,TMS,S&T,SIG-NGP-HWH-896,Signal,NGP-HWH,NGP,HWH,Cable insulation test,5,7,6,3.1,Traffic block,2026-09-22,Quarterly,0,8
+T0316,CMS,Engineering,TRK-MAS-LKO-102,Track,MAS-LKO,MAS,LKO,Weld repair,3,8,0,1.3,Traffic block,2026-10-16,Annual,1,4
+T0317,TMS,TRD,SP-BCT-NGP-336,OHE,BCT-NGP,BCT,NGP,Wire tensioning,10,9,0,1.2,Power block,2026-10-24,Quarterly,0,6
+T0318,TDMS,TRD,SP-HWH-MAS-218,OHE,HWH-MAS,HWH,MAS,Pantograph check,3,3,0,1.4,Power block,2026-10-18,Quarterly,2,6
+T0319,CMS,TRD,TSS-HWH-MAS-934,OHE,HWH-MAS,HWH,MAS,OHE maintenance,5,4,0,2.2,Power block,2026-10-12,Bi-Annual,3,9
+T0320,CMS,S&T,SIG-NGP-HWH-812,Signal,NGP-HWH,NGP,HWH,Signal inspection,8,3,14,1.5,Traffic block,2026-09-14,Conditional,3,8
+T0321,CMS,Engineering,TRA-LKO-NDLS-726,Track,LKO-NDLS,LKO,NDLS,Deep screening,3,8,12,3.9,Traffic block,2026-09-16,Annual,3,4
+T0322,CMS,S&T,PNT-BCT-NGP-770,Signal,BCT-NGP,BCT,NGP,Signal inspection,5,3,0,3.0,Traffic block,2026-10-22,Conditional,5,8
+T0323,SMMS,TRD,SP-HWH-MAS-804,OHE,HWH-MAS,HWH,MAS,Mast adjustment,8,7,0,3.0,Power block,2026-10-05,Annual,2,9
+T0324,CMS,Engineering,TRK-LKO-NDLS-111,Track,LKO-NDLS,LKO,NDLS,Ultrasonic inspection,8,4,0,2.4,Traffic block,2026-10-13,Quarterly,0,7
+T0325,TDMS,Engineering,TRK-HWH-MAS-619,Track,HWH-MAS,HWH,MAS,Weld repair,4,7,0,2.2,Traffic block,2026-10-05,Monthly,3,7
+T0326,CMS,Engineering,TRA-MAS-LKO-221,Track,MAS-LKO,MAS,LKO,Deep screening,6,8,0,1.3,Traffic block,2026-10-11,Monthly,4,8
+T0327,TMS,Engineering,PTS-LKO-NDLS-411,Track,LKO-NDLS,LKO,NDLS,Ultrasonic inspection,7,7,0,3.0,Traffic block,2026-10-28,Bi-Annual,2,4
+T0328,SMMS,S&T,AXL-HWH-MAS-714,Signal,HWH-MAS,HWH,MAS,Cable insulation test,6,8,0,3.1,Traffic block,2026-10-01,Monthly,5,5
+T0329,TMS,S&T,AXL-HWH-MAS-634,Signal,HWH-MAS,HWH,MAS,Relay check,5,8,0,3.7,Traffic block,2026-10-13,Quarterly,5,9
+T0330,CMS,Engineering,TRK-HWH-MAS-292,Track,HWH-MAS,HWH,MAS,Ultrasonic inspection,3,6,0,3.5,Traffic block,2026-10-04,Bi-Annual,0,7
+T0331,TMS,TRD,TSS-LKO-NDLS-568,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,8,7,3,3.9,Power block,2026-09-25,Conditional,5,4
+T0332,CMS,TRD,OHE-MAS-LKO-808,OHE,MAS-LKO,MAS,LKO,Mast adjustment,7,4,0,1.4,Power block,2026-10-10,Conditional,4,6
+T0333,CMS,S&T,PNT-LKO-NDLS-507,Signal,LKO-NDLS,LKO,NDLS,Point machine service,9,9,0,1.4,Traffic block,2026-10-11,Conditional,5,9
+T0334,TDMS,TRD,SP-LKO-NDLS-854,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,8,8,0,3.1,Power block,2026-10-19,Bi-Annual,5,5
+T0335,SMMS,TRD,SP-LKO-NDLS-218,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,9,10,0,3.8,Power block,2026-10-20,Annual,5,9
+T0336,TDMS,S&T,SIG-BCT-NGP-125,Signal,BCT-NGP,BCT,NGP,Cable insulation test,6,4,0,1.2,Traffic block,2026-10-06,Quarterly,2,9
+T0337,TDMS,Engineering,TRA-BCT-NGP-308,Track,BCT-NGP,BCT,NGP,USFD testing,7,3,0,2.4,Traffic block,2026-10-17,Conditional,1,9
+T0338,CMS,Engineering,TRA-LKO-NDLS-809,Track,LKO-NDLS,LKO,NDLS,USFD testing,8,3,7,2.2,Traffic block,2026-09-21,Bi-Annual,4,4
+T0339,TMS,TRD,SP-HWH-MAS-989,OHE,HWH-MAS,HWH,MAS,Insulator replacement,6,4,12,3.1,Power block,2026-09-16,Conditional,4,9
+T0340,SMMS,TRD,TSS-NGP-HWH-281,OHE,NGP-HWH,NGP,HWH,Wire tensioning,7,8,12,2.5,Power block,2026-09-16,Monthly,3,6
+T0341,TDMS,Engineering,TRA-NGP-HWH-105,Track,NGP-HWH,NGP,HWH,Ultrasonic inspection,5,6,0,1.5,Traffic block,2026-10-02,Bi-Annual,4,4
+T0342,TDMS,S&T,PNT-LKO-NDLS-174,Signal,LKO-NDLS,LKO,NDLS,Cable insulation test,8,5,0,3.9,Traffic block,2026-10-14,Monthly,4,5
+T0343,CMS,TRD,OHE-LKO-NDLS-457,OHE,LKO-NDLS,LKO,NDLS,Pantograph check,4,4,0,2.0,Power block,2026-10-07,Quarterly,4,8
+T0344,CMS,TRD,SP-BCT-NGP-454,OHE,BCT-NGP,BCT,NGP,OHE maintenance,6,4,10,3.8,Power block,2026-09-18,Monthly,5,6
+T0345,CMS,Engineering,PTS-MAS-LKO-841,Track,MAS-LKO,MAS,LKO,Weld repair,5,3,14,3.3,Traffic block,2026-09-14,Conditional,3,7
+T0346,TMS,S&T,AXL-NGP-HWH-184,Signal,NGP-HWH,NGP,HWH,Relay check,3,4,13,2.6,Traffic block,2026-09-15,Monthly,1,9
+T0347,SMMS,TRD,OHE-MAS-LKO-650,OHE,MAS-LKO,MAS,LKO,OHE maintenance,8,8,0,2.9,Power block,2026-10-28,Monthly,5,9
+T0348,SMMS,Engineering,TRA-MAS-LKO-138,Track,MAS-LKO,MAS,LKO,USFD testing,3,3,0,3.4,Traffic block,2026-10-15,Monthly,4,5
+T0349,TDMS,S&T,AXL-MAS-LKO-514,Signal,MAS-LKO,MAS,LKO,Axle counter reset,6,5,0,3.0,Traffic block,2026-10-15,Monthly,5,9
+T0350,TMS,TRD,SP-LKO-NDLS-968,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,3,5,2,1.9,Power block,2026-09-26,Bi-Annual,4,4
+T0351,TDMS,S&T,AXL-MAS-LKO-131,Signal,MAS-LKO,MAS,LKO,Axle counter reset,6,4,0,1.4,Traffic block,2026-10-10,Conditional,2,9
+T0352,SMMS,S&T,AXL-HWH-MAS-995,Signal,HWH-MAS,HWH,MAS,Signal inspection,7,4,0,1.0,Traffic block,2026-10-17,Annual,4,8
+T0353,TMS,S&T,SIG-NGP-HWH-522,Signal,NGP-HWH,NGP,HWH,Relay check,8,7,0,1.6,Traffic block,2026-10-17,Bi-Annual,1,4
+T0354,SMMS,TRD,SP-LKO-NDLS-572,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,8,7,0,3.0,Power block,2026-10-06,Monthly,1,9
+T0355,CMS,S&T,AXL-HWH-MAS-771,Signal,HWH-MAS,HWH,MAS,Point machine service,8,7,0,1.2,Traffic block,2026-10-04,Bi-Annual,3,7
+T0356,TDMS,TRD,OHE-HWH-MAS-679,OHE,HWH-MAS,HWH,MAS,Mast adjustment,7,5,7,1.5,Power block,2026-09-21,Quarterly,1,9
+T0357,CMS,S&T,AXL-HWH-MAS-850,Signal,HWH-MAS,HWH,MAS,Point machine service,9,10,0,2.1,Traffic block,2026-10-07,Annual,4,4
+T0358,SMMS,TRD,TSS-LKO-NDLS-979,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,4,7,0,3.2,Power block,2026-10-18,Monthly,5,4
+T0359,TMS,TRD,SP-BCT-NGP-514,OHE,BCT-NGP,BCT,NGP,Mast adjustment,7,4,9,1.8,Power block,2026-09-19,Conditional,3,9
+T0360,SMMS,S&T,AXL-MAS-LKO-850,Signal,MAS-LKO,MAS,LKO,Point machine service,9,8,0,2.5,Traffic block,2026-10-10,Bi-Annual,4,4
+T0361,SMMS,TRD,OHE-NGP-HWH-556,OHE,NGP-HWH,NGP,HWH,Mast adjustment,4,4,0,2.7,Power block,2026-10-25,Quarterly,5,9
+T0362,CMS,S&T,PNT-BCT-NGP-337,Signal,BCT-NGP,BCT,NGP,Point machine service,7,9,0,1.1,Traffic block,2026-10-04,Conditional,2,7
+T0363,CMS,S&T,AXL-BCT-NGP-431,Signal,BCT-NGP,BCT,NGP,Signal inspection,3,8,11,3.5,Traffic block,2026-09-17,Bi-Annual,4,8
+T0364,SMMS,S&T,AXL-MAS-LKO-769,Signal,MAS-LKO,MAS,LKO,Relay check,3,7,0,3.9,Traffic block,2026-10-05,Conditional,3,6
+T0365,TDMS,S&T,SIG-MAS-LKO-613,Signal,MAS-LKO,MAS,LKO,Cable insulation test,4,6,0,1.2,Traffic block,2026-10-18,Bi-Annual,1,5
+T0366,SMMS,Engineering,PTS-HWH-MAS-936,Track,HWH-MAS,HWH,MAS,Ultrasonic inspection,3,8,0,3.4,Traffic block,2026-10-21,Monthly,3,9
+T0367,CMS,S&T,SIG-NGP-HWH-762,Signal,NGP-HWH,NGP,HWH,Cable insulation test,6,3,0,1.4,Traffic block,2026-10-16,Quarterly,1,9
+T0368,TMS,TRD,OHE-NGP-HWH-364,OHE,NGP-HWH,NGP,HWH,OHE maintenance,4,7,10,3.9,Power block,2026-09-18,Monthly,5,9
+T0369,TDMS,Engineering,PTS-NGP-HWH-582,Track,NGP-HWH,NGP,HWH,Deep screening,6,4,0,2.2,Traffic block,2026-10-02,Conditional,1,8
+T0370,TDMS,Engineering,PTS-HWH-MAS-704,Track,HWH-MAS,HWH,MAS,Deep screening,3,4,0,1.4,Traffic block,2026-09-28,Quarterly,4,8
+T0371,CMS,Engineering,TRK-LKO-NDLS-587,Track,LKO-NDLS,LKO,NDLS,Rail fracture,7,7,0,3.0,Traffic block,2026-10-26,Conditional,4,4
+T0372,CMS,TRD,OHE-MAS-LKO-814,OHE,MAS-LKO,MAS,LKO,Wire tensioning,10,8,8,3.4,Power block,2026-09-20,Bi-Annual,4,9
+T0373,TMS,S&T,PNT-NGP-HWH-884,Signal,NGP-HWH,NGP,HWH,Relay check,4,3,0,3.6,Traffic block,2026-10-11,Bi-Annual,1,4
+T0374,TMS,TRD,SP-LKO-NDLS-107,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,6,8,0,3.4,Power block,2026-10-11,Bi-Annual,0,5
+T0375,CMS,TRD,TSS-LKO-NDLS-975,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,10,9,0,4.0,Power block,2026-10-10,Quarterly,3,8
+T0376,CMS,Engineering,PTS-HWH-MAS-595,Track,HWH-MAS,HWH,MAS,Ultrasonic inspection,5,5,0,3.3,Traffic block,2026-10-10,Quarterly,5,4
+T0377,SMMS,S&T,SIG-NGP-HWH-620,Signal,NGP-HWH,NGP,HWH,Signal inspection,6,5,10,3.1,Traffic block,2026-09-18,Monthly,1,7
+T0378,TMS,Engineering,PTS-NGP-HWH-545,Track,NGP-HWH,NGP,HWH,Deep screening,3,3,0,2.1,Traffic block,2026-10-17,Monthly,5,7
+T0379,CMS,TRD,SP-LKO-NDLS-711,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,7,8,0,2.3,Power block,2026-10-04,Conditional,2,5
+T0380,TMS,TRD,SP-LKO-NDLS-337,OHE,LKO-NDLS,LKO,NDLS,Mast adjustment,7,4,0,2.1,Power block,2026-10-18,Monthly,1,4
+T0381,TDMS,S&T,PNT-HWH-MAS-700,Signal,HWH-MAS,HWH,MAS,Axle counter reset,4,7,0,3.1,Traffic block,2026-10-27,Monthly,4,6
+T0382,TDMS,S&T,AXL-HWH-MAS-299,Signal,HWH-MAS,HWH,MAS,Point machine service,10,10,0,1.8,Traffic block,2026-10-11,Conditional,0,8
+T0383,TMS,TRD,OHE-HWH-MAS-922,OHE,HWH-MAS,HWH,MAS,Wire tensioning,9,9,0,3.9,Power block,2026-10-16,Annual,1,6
+T0384,CMS,TRD,OHE-MAS-LKO-593,OHE,MAS-LKO,MAS,LKO,Mast adjustment,3,5,0,2.9,Power block,2026-10-05,Quarterly,2,7
+T0385,TDMS,TRD,SP-LKO-NDLS-952,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,5,4,0,2.2,Power block,2026-10-21,Bi-Annual,0,8
+T0386,SMMS,S&T,SIG-HWH-MAS-687,Signal,HWH-MAS,HWH,MAS,Relay check,5,4,11,3.8,Traffic block,2026-09-17,Annual,5,5
+T0387,SMMS,TRD,OHE-NGP-HWH-334,OHE,NGP-HWH,NGP,HWH,Wire tensioning,8,8,6,1.5,Power block,2026-09-22,Monthly,0,9
+T0388,CMS,TRD,OHE-BCT-NGP-968,OHE,BCT-NGP,BCT,NGP,Mast adjustment,6,5,0,2.5,Power block,2026-10-26,Conditional,2,7
+T0389,SMMS,TRD,OHE-HWH-MAS-868,OHE,HWH-MAS,HWH,MAS,Pantograph check,7,4,0,3.4,Power block,2026-10-13,Conditional,0,8
+T0390,TDMS,S&T,SIG-NGP-HWH-815,Signal,NGP-HWH,NGP,HWH,Axle counter reset,7,6,0,1.0,Traffic block,2026-10-19,Quarterly,3,8
+T0391,TMS,S&T,PNT-HWH-MAS-291,Signal,HWH-MAS,HWH,MAS,Cable insulation test,7,5,0,2.4,Traffic block,2026-10-17,Bi-Annual,2,5
+T0392,CMS,S&T,AXL-NGP-HWH-870,Signal,NGP-HWH,NGP,HWH,Axle counter reset,5,5,5,2.4,Traffic block,2026-09-23,Quarterly,4,9
+T0393,SMMS,Engineering,PTS-HWH-MAS-542,Track,HWH-MAS,HWH,MAS,Tamping,6,4,0,3.9,Traffic block,2026-10-02,Annual,0,5
+T0394,CMS,S&T,AXL-NGP-HWH-837,Signal,NGP-HWH,NGP,HWH,Cable insulation test,5,6,0,2.7,Traffic block,2026-10-16,Monthly,3,4
+T0395,SMMS,Engineering,TRA-NGP-HWH-959,Track,NGP-HWH,NGP,HWH,Weld repair,8,3,0,2.0,Traffic block,2026-10-09,Bi-Annual,4,8
+T0396,TDMS,S&T,SIG-BCT-NGP-459,Signal,BCT-NGP,BCT,NGP,Axle counter reset,8,7,0,2.7,Traffic block,2026-10-18,Conditional,1,6
+T0397,TDMS,S&T,AXL-LKO-NDLS-557,Signal,LKO-NDLS,LKO,NDLS,Axle counter reset,3,6,0,2.4,Traffic block,2026-10-28,Quarterly,1,9
+T0398,TDMS,S&T,PNT-LKO-NDLS-969,Signal,LKO-NDLS,LKO,NDLS,Cable insulation test,3,3,0,1.7,Traffic block,2026-10-08,Bi-Annual,5,6
+T0399,CMS,S&T,AXL-MAS-LKO-701,Signal,MAS-LKO,MAS,LKO,Relay check,7,6,0,1.6,Traffic block,2026-09-28,Quarterly,5,5
+T0400,TDMS,TRD,OHE-BCT-NGP-506,OHE,BCT-NGP,BCT,NGP,Insulator replacement,3,3,0,3.6,Power block,2026-10-15,Monthly,0,7
+T0401,TMS,Engineering,TRK-HWH-MAS-186,Track,HWH-MAS,HWH,MAS,Ultrasonic inspection,8,6,0,1.7,Traffic block,2026-10-07,Annual,5,5
+T0402,SMMS,TRD,OHE-NGP-HWH-779,OHE,NGP-HWH,NGP,HWH,OHE maintenance,5,5,8,3.9,Power block,2026-09-20,Bi-Annual,4,7
+T0403,SMMS,TRD,SP-LKO-NDLS-711,OHE,LKO-NDLS,LKO,NDLS,Insulator replacement,6,8,0,3.6,Power block,2026-10-11,Conditional,5,9
+T0404,TDMS,S&T,SIG-MAS-LKO-924,Signal,MAS-LKO,MAS,LKO,Cable insulation test,3,6,0,2.2,Traffic block,2026-10-02,Bi-Annual,0,4
+T0405,SMMS,S&T,AXL-HWH-MAS-108,Signal,HWH-MAS,HWH,MAS,Axle counter reset,8,6,8,1.9,Traffic block,2026-09-20,Annual,2,8
+T0406,SMMS,Engineering,TRK-LKO-NDLS-521,Track,LKO-NDLS,LKO,NDLS,Weld repair,7,6,0,1.5,Traffic block,2026-10-21,Annual,3,5
+T0407,TDMS,Engineering,TRK-MAS-LKO-629,Track,MAS-LKO,MAS,LKO,USFD testing,7,8,0,1.9,Traffic block,2026-10-21,Conditional,2,7
+T0408,SMMS,Engineering,TRA-NGP-HWH-213,Track,NGP-HWH,NGP,HWH,Tamping,8,6,0,1.8,Traffic block,2026-10-17,Annual,1,6
+T0409,TMS,Engineering,TRK-BCT-NGP-290,Track,BCT-NGP,BCT,NGP,Ultrasonic inspection,3,5,0,3.1,Traffic block,2026-10-21,Monthly,1,4
+T0410,SMMS,Engineering,TRA-MAS-LKO-530,Track,MAS-LKO,MAS,LKO,Tamping,5,6,8,3.1,Traffic block,2026-09-20,Bi-Annual,0,5
+T0411,TMS,S&T,AXL-MAS-LKO-581,Signal,MAS-LKO,MAS,LKO,Signal inspection,4,4,5,3.5,Traffic block,2026-09-23,Monthly,0,9
+T0412,SMMS,S&T,AXL-MAS-LKO-134,Signal,MAS-LKO,MAS,LKO,Point machine service,8,10,0,1.3,Traffic block,2026-10-19,Quarterly,3,7
+T0413,TDMS,S&T,AXL-NGP-HWH-662,Signal,NGP-HWH,NGP,HWH,Signal inspection,7,3,0,2.9,Traffic block,2026-10-04,Bi-Annual,0,9
+T0414,SMMS,Engineering,TRA-NGP-HWH-432,Track,NGP-HWH,NGP,HWH,USFD testing,3,4,0,2.8,Traffic block,2026-10-10,Quarterly,0,4
+T0415,CMS,TRD,TSS-LKO-NDLS-889,OHE,LKO-NDLS,LKO,NDLS,Insulator replacement,3,4,0,1.3,Power block,2026-10-17,Bi-Annual,5,4
+T0416,TMS,S&T,SIG-NGP-HWH-228,Signal,NGP-HWH,NGP,HWH,Cable insulation test,6,4,0,2.7,Traffic block,2026-10-18,Bi-Annual,3,9
+T0417,SMMS,Engineering,PTS-MAS-LKO-237,Track,MAS-LKO,MAS,LKO,Weld repair,5,3,0,2.3,Traffic block,2026-10-07,Conditional,5,7
+T0418,SMMS,TRD,TSS-NGP-HWH-431,OHE,NGP-HWH,NGP,HWH,Mast adjustment,8,6,0,3.5,Power block,2026-10-27,Conditional,1,4
+T0419,SMMS,S&T,AXL-HWH-MAS-475,Signal,HWH-MAS,HWH,MAS,Relay check,6,3,0,2.5,Traffic block,2026-10-21,Quarterly,0,8
+T0420,TDMS,TRD,SP-NGP-HWH-164,OHE,NGP-HWH,NGP,HWH,Wire tensioning,10,8,0,2.5,Power block,2026-10-15,Quarterly,4,6
+T0421,TDMS,S&T,SIG-HWH-MAS-635,Signal,HWH-MAS,HWH,MAS,Signal inspection,8,3,0,3.8,Traffic block,2026-10-03,Monthly,1,4
+T0422,CMS,Engineering,PTS-BCT-NGP-757,Track,BCT-NGP,BCT,NGP,Rail fracture,10,10,0,3.1,Traffic block,2026-10-06,Monthly,2,5
+T0423,TMS,Engineering,TRA-NGP-HWH-952,Track,NGP-HWH,NGP,HWH,USFD testing,3,6,1,2.1,Traffic block,2026-09-27,Annual,2,9
+T0424,TMS,TRD,OHE-HWH-MAS-851,OHE,HWH-MAS,HWH,MAS,Mast adjustment,3,5,0,1.6,Power block,2026-10-14,Monthly,0,9
+T0425,SMMS,TRD,OHE-MAS-LKO-638,OHE,MAS-LKO,MAS,LKO,Insulator replacement,8,4,0,3.8,Power block,2026-10-15,Conditional,3,9
+T0426,TMS,TRD,SP-LKO-NDLS-569,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,10,7,0,1.5,Power block,2026-10-10,Conditional,2,9
+T0427,SMMS,TRD,TSS-LKO-NDLS-422,OHE,LKO-NDLS,LKO,NDLS,Pantograph check,7,5,7,3.3,Power block,2026-09-21,Bi-Annual,4,5
+T0428,SMMS,S&T,PNT-LKO-NDLS-563,Signal,LKO-NDLS,LKO,NDLS,Relay check,6,6,0,1.1,Traffic block,2026-10-07,Conditional,0,8
+T0429,SMMS,S&T,SIG-BCT-NGP-319,Signal,BCT-NGP,BCT,NGP,Relay check,5,3,0,3.8,Traffic block,2026-10-24,Bi-Annual,4,8
+T0430,SMMS,Engineering,TRA-BCT-NGP-259,Track,BCT-NGP,BCT,NGP,Deep screening,4,5,0,2.7,Traffic block,2026-10-05,Bi-Annual,2,4
+T0431,CMS,TRD,SP-NGP-HWH-432,OHE,NGP-HWH,NGP,HWH,OHE maintenance,6,4,0,3.7,Power block,2026-10-20,Conditional,0,8
+T0432,TDMS,Engineering,TRK-LKO-NDLS-898,Track,LKO-NDLS,LKO,NDLS,Deep screening,3,5,0,3.5,Traffic block,2026-10-11,Monthly,1,9
+T0433,TMS,TRD,TSS-MAS-LKO-636,OHE,MAS-LKO,MAS,LKO,OHE maintenance,3,5,0,1.4,Power block,2026-10-14,Quarterly,1,4
+T0434,CMS,S&T,AXL-LKO-NDLS-192,Signal,LKO-NDLS,LKO,NDLS,Cable insulation test,4,6,0,2.2,Traffic block,2026-10-02,Bi-Annual,0,7
+T0435,TMS,TRD,OHE-MAS-LKO-508,OHE,MAS-LKO,MAS,LKO,Wire tensioning,10,8,0,2.4,Power block,2026-10-04,Annual,3,9
+T0436,SMMS,TRD,OHE-LKO-NDLS-348,OHE,LKO-NDLS,LKO,NDLS,Mast adjustment,3,5,0,2.0,Power block,2026-10-27,Conditional,0,4
+T0437,CMS,S&T,SIG-HWH-MAS-428,Signal,HWH-MAS,HWH,MAS,Relay check,5,7,0,3.3,Traffic block,2026-10-03,Bi-Annual,4,7
+T0438,SMMS,S&T,SIG-BCT-NGP-801,Signal,BCT-NGP,BCT,NGP,Point machine service,9,8,0,3.6,Traffic block,2026-10-01,Monthly,1,8
+T0439,SMMS,S&T,AXL-BCT-NGP-923,Signal,BCT-NGP,BCT,NGP,Relay check,3,5,0,1.1,Traffic block,2026-10-04,Conditional,1,5
+T0440,TDMS,TRD,SP-MAS-LKO-244,OHE,MAS-LKO,MAS,LKO,Mast adjustment,8,8,0,2.1,Power block,2026-10-26,Conditional,0,6
+T0441,SMMS,Engineering,PTS-HWH-MAS-732,Track,HWH-MAS,HWH,MAS,Tamping,5,3,0,3.8,Traffic block,2026-09-30,Annual,5,6
+T0442,TDMS,Engineering,PTS-BCT-NGP-495,Track,BCT-NGP,BCT,NGP,Weld repair,4,6,0,3.1,Traffic block,2026-10-26,Bi-Annual,3,8
+T0443,TMS,Engineering,TRA-NGP-HWH-674,Track,NGP-HWH,NGP,HWH,Ultrasonic inspection,8,3,0,3.8,Traffic block,2026-10-07,Bi-Annual,3,7
+T0444,SMMS,Engineering,TRA-HWH-MAS-463,Track,HWH-MAS,HWH,MAS,USFD testing,8,5,0,3.9,Traffic block,2026-10-14,Bi-Annual,0,9
+T0445,TDMS,S&T,PNT-BCT-NGP-330,Signal,BCT-NGP,BCT,NGP,Cable insulation test,4,5,11,1.4,Traffic block,2026-09-17,Annual,4,9
+T0446,SMMS,S&T,SIG-NGP-HWH-536,Signal,NGP-HWH,NGP,HWH,Cable insulation test,5,7,0,2.6,Traffic block,2026-10-04,Quarterly,4,8
+T0447,SMMS,Engineering,PTS-HWH-MAS-636,Track,HWH-MAS,HWH,MAS,USFD testing,4,6,13,1.4,Traffic block,2026-09-15,Conditional,1,6
+T0448,TMS,TRD,OHE-LKO-NDLS-425,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,4,8,0,2.0,Power block,2026-10-11,Annual,2,7
+T0449,TDMS,Engineering,TRK-NGP-HWH-289,Track,NGP-HWH,NGP,HWH,Rail fracture,7,9,0,2.8,Traffic block,2026-10-17,Quarterly,1,9
+T0450,TMS,S&T,SIG-BCT-NGP-614,Signal,BCT-NGP,BCT,NGP,Axle counter reset,7,6,0,2.1,Traffic block,2026-10-25,Annual,3,7
+T0451,SMMS,Engineering,TRK-NGP-HWH-518,Track,NGP-HWH,NGP,HWH,Tamping,3,5,4,3.2,Traffic block,2026-09-24,Quarterly,0,5
+T0452,CMS,TRD,TSS-MAS-LKO-352,OHE,MAS-LKO,MAS,LKO,Wire tensioning,10,10,0,2.8,Power block,2026-10-24,Annual,5,6
+T0453,CMS,TRD,SP-LKO-NDLS-637,OHE,LKO-NDLS,LKO,NDLS,Mast adjustment,8,8,0,2.6,Power block,2026-10-12,Annual,0,5
+T0454,CMS,TRD,TSS-BCT-NGP-628,OHE,BCT-NGP,BCT,NGP,Mast adjustment,8,3,0,2.3,Power block,2026-10-26,Bi-Annual,2,7
+T0455,SMMS,S&T,SIG-HWH-MAS-806,Signal,HWH-MAS,HWH,MAS,Cable insulation test,7,4,0,2.9,Traffic block,2026-09-30,Conditional,0,5
+T0456,SMMS,S&T,PNT-MAS-LKO-125,Signal,MAS-LKO,MAS,LKO,Relay check,4,6,0,3.1,Traffic block,2026-10-04,Annual,0,6
+T0457,TDMS,TRD,OHE-NGP-HWH-216,OHE,NGP-HWH,NGP,HWH,OHE maintenance,8,6,0,1.3,Power block,2026-10-20,Annual,5,8
+T0458,SMMS,S&T,SIG-LKO-NDLS-886,Signal,LKO-NDLS,LKO,NDLS,Axle counter reset,4,5,0,3.0,Traffic block,2026-10-02,Quarterly,1,5
+T0459,TMS,S&T,AXL-HWH-MAS-887,Signal,HWH-MAS,HWH,MAS,Relay check,6,5,0,1.4,Traffic block,2026-10-02,Quarterly,0,8
+T0460,TDMS,Engineering,TRA-MAS-LKO-656,Track,MAS-LKO,MAS,LKO,Deep screening,3,7,4,1.7,Traffic block,2026-09-24,Annual,3,7
+T0461,CMS,Engineering,TRK-LKO-NDLS-350,Track,LKO-NDLS,LKO,NDLS,Ultrasonic inspection,7,5,0,2.7,Traffic block,2026-10-24,Quarterly,0,5
+T0462,SMMS,Engineering,TRK-HWH-MAS-974,Track,HWH-MAS,HWH,MAS,Rail fracture,7,9,0,1.3,Traffic block,2026-10-01,Annual,1,5
+T0463,TDMS,TRD,SP-LKO-NDLS-281,OHE,LKO-NDLS,LKO,NDLS,Mast adjustment,6,8,0,3.8,Power block,2026-09-30,Bi-Annual,2,6
+T0464,CMS,Engineering,TRK-MAS-LKO-399,Track,MAS-LKO,MAS,LKO,Ultrasonic inspection,6,4,0,3.6,Traffic block,2026-10-08,Conditional,3,8
+T0465,SMMS,TRD,OHE-NGP-HWH-211,OHE,NGP-HWH,NGP,HWH,Mast adjustment,7,8,9,4.0,Power block,2026-09-19,Conditional,5,6
+T0466,CMS,TRD,SP-HWH-MAS-688,OHE,HWH-MAS,HWH,MAS,Wire tensioning,9,8,0,2.5,Power block,2026-10-21,Annual,3,5
+T0467,SMMS,TRD,OHE-HWH-MAS-221,OHE,HWH-MAS,HWH,MAS,Insulator replacement,3,6,0,1.4,Power block,2026-10-25,Quarterly,4,7
+T0468,CMS,Engineering,PTS-HWH-MAS-925,Track,HWH-MAS,HWH,MAS,Weld repair,8,4,0,1.6,Traffic block,2026-10-07,Bi-Annual,0,6
+T0469,TDMS,TRD,OHE-LKO-NDLS-216,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,9,9,0,2.7,Power block,2026-10-28,Monthly,1,5
+T0470,TDMS,S&T,SIG-MAS-LKO-761,Signal,MAS-LKO,MAS,LKO,Axle counter reset,4,6,0,2.4,Traffic block,2026-10-25,Conditional,2,7
+T0471,CMS,TRD,TSS-BCT-NGP-678,OHE,BCT-NGP,BCT,NGP,Mast adjustment,8,8,0,2.6,Power block,2026-10-04,Conditional,5,6
+T0472,TDMS,Engineering,TRK-NGP-HWH-447,Track,NGP-HWH,NGP,HWH,Weld repair,6,8,0,1.5,Traffic block,2026-10-17,Annual,1,8
+T0473,TMS,S&T,PNT-HWH-MAS-523,Signal,HWH-MAS,HWH,MAS,Signal inspection,3,6,6,2.4,Traffic block,2026-09-22,Bi-Annual,1,8
+T0474,TDMS,Engineering,TRK-BCT-NGP-896,Track,BCT-NGP,BCT,NGP,Weld repair,4,3,0,1.1,Traffic block,2026-10-13,Conditional,1,5
+T0475,TDMS,S&T,PNT-LKO-NDLS-246,Signal,LKO-NDLS,LKO,NDLS,Relay check,3,7,0,1.4,Traffic block,2026-10-21,Monthly,3,7
+T0476,TMS,Engineering,PTS-HWH-MAS-968,Track,HWH-MAS,HWH,MAS,Rail fracture,7,9,0,1.1,Traffic block,2026-10-14,Bi-Annual,0,8
+T0477,TDMS,TRD,OHE-NGP-HWH-297,OHE,NGP-HWH,NGP,HWH,Wire tensioning,9,9,0,3.3,Power block,2026-10-19,Monthly,2,5
+T0478,SMMS,S&T,AXL-BCT-NGP-673,Signal,BCT-NGP,BCT,NGP,Signal inspection,7,3,0,2.1,Traffic block,2026-10-08,Bi-Annual,1,9
+T0479,TDMS,TRD,OHE-NGP-HWH-418,OHE,NGP-HWH,NGP,HWH,Insulator replacement,7,5,0,1.2,Power block,2026-09-28,Annual,5,4
+T0480,TMS,S&T,PNT-BCT-NGP-501,Signal,BCT-NGP,BCT,NGP,Signal inspection,4,8,0,2.8,Traffic block,2026-10-24,Annual,4,6
+T0481,TDMS,S&T,SIG-NGP-HWH-873,Signal,NGP-HWH,NGP,HWH,Cable insulation test,6,7,0,3.4,Traffic block,2026-10-27,Annual,0,7
+T0482,TDMS,TRD,OHE-MAS-LKO-329,OHE,MAS-LKO,MAS,LKO,Pantograph check,4,7,0,2.1,Power block,2026-10-03,Bi-Annual,2,7
+T0483,CMS,Engineering,TRK-BCT-NGP-459,Track,BCT-NGP,BCT,NGP,Deep screening,6,6,5,3.3,Traffic block,2026-09-23,Conditional,1,8
+T0484,TMS,S&T,AXL-BCT-NGP-765,Signal,BCT-NGP,BCT,NGP,Relay check,3,5,0,2.2,Traffic block,2026-10-11,Quarterly,4,5
+T0485,SMMS,S&T,PNT-MAS-LKO-313,Signal,MAS-LKO,MAS,LKO,Signal inspection,8,7,0,3.9,Traffic block,2026-10-16,Bi-Annual,4,9
+T0486,SMMS,Engineering,PTS-BCT-NGP-687,Track,BCT-NGP,BCT,NGP,USFD testing,6,3,0,2.4,Traffic block,2026-10-15,Monthly,3,5
+T0487,TDMS,S&T,SIG-BCT-NGP-801,Signal,BCT-NGP,BCT,NGP,Cable insulation test,7,6,0,2.9,Traffic block,2026-09-29,Monthly,1,5
+T0488,TMS,Engineering,PTS-NGP-HWH-398,Track,NGP-HWH,NGP,HWH,Deep screening,6,7,0,1.6,Traffic block,2026-10-19,Bi-Annual,2,8
+T0489,TDMS,S&T,AXL-HWH-MAS-108,Signal,HWH-MAS,HWH,MAS,Signal inspection,7,7,0,1.4,Traffic block,2026-10-07,Monthly,2,8
+T0490,TMS,Engineering,TRK-LKO-NDLS-981,Track,LKO-NDLS,LKO,NDLS,Weld repair,5,3,0,3.1,Traffic block,2026-10-10,Bi-Annual,5,7
+T0491,CMS,S&T,SIG-MAS-LKO-778,Signal,MAS-LKO,MAS,LKO,Cable insulation test,4,6,0,2.7,Traffic block,2026-10-24,Bi-Annual,3,5
+T0492,TDMS,TRD,OHE-NGP-HWH-173,OHE,NGP-HWH,NGP,HWH,Insulator replacement,8,3,0,3.7,Power block,2026-10-19,Annual,1,4
+T0493,SMMS,TRD,SP-MAS-LKO-718,OHE,MAS-LKO,MAS,LKO,Pantograph check,6,7,0,2.5,Power block,2026-10-15,Annual,3,6
+T0494,SMMS,Engineering,TRK-MAS-LKO-691,Track,MAS-LKO,MAS,LKO,Ultrasonic inspection,6,8,0,2.5,Traffic block,2026-10-11,Conditional,4,6
+T0495,TMS,Engineering,PTS-LKO-NDLS-477,Track,LKO-NDLS,LKO,NDLS,Deep screening,3,7,0,3.1,Traffic block,2026-10-02,Conditional,2,7
+T0496,TMS,TRD,OHE-LKO-NDLS-583,OHE,LKO-NDLS,LKO,NDLS,OHE maintenance,8,8,0,3.0,Power block,2026-10-19,Conditional,4,6
+T0497,TMS,S&T,PNT-LKO-NDLS-564,Signal,LKO-NDLS,LKO,NDLS,Signal inspection,7,6,0,2.0,Traffic block,2026-10-09,Bi-Annual,2,5
+T0498,TMS,TRD,SP-LKO-NDLS-903,OHE,LKO-NDLS,LKO,NDLS,Wire tensioning,9,7,0,2.7,Power block,2026-10-16,Monthly,5,6
+T0499,TMS,S&T,SIG-MAS-LKO-617,Signal,MAS-LKO,MAS,LKO,Signal inspection,3,5,0,2.8,Traffic block,2026-10-06,Bi-Annual,0,9
+T0500,TMS,TRD,SP-NGP-HWH-254,OHE,NGP-HWH,NGP,HWH,Mast adjustment,8,6,0,1.5,Power block,2026-10-23,Quarterly,3,5
